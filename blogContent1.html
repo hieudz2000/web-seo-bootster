@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous" />
+
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+      <link rel="stylesheet" href="style.css" />
+
+      <link rel="stylesheet" href="styleTodaySeo.css" />
+
+      <link rel="stylesheet" href="reponsive.css" />
+      <title>blog content</title>
+</head>
+<header>
+      <div class="container-fluid shadow-lg bg-body rounded home-header" style="position: fixed;z-index: 2;">
+            <div class="row p-3 ">
+                  <div class="col-3 text-end mx-4">
+
+                        <img src="./image/Group1.png">
+                  </div>
+                  <div class="col-8 d-flex justify-content-center">
+                        <ul class="nav">
+                              <li class="nav-item">
+                                    <a class="nav-link active " aria-current="page" href="home.html">HOME</a>
+                              </li>
+                              <li class="nav-item">
+                                    <!-- <a class="nav-link" href="#">Link</a> -->
+                                    <div class="dropdown p-2">
+                                          <button class="border-0 bg-white text-dark" type="button">
+                                                FEATURE
+                                                <img src="/image/drop.png" style="margin-top:-5px; margin-left:5px;">
+                                          </button>
+                                          <div class=" dropdown-content grap ">
+                                                <a class="link-a" href="todaySeo.html">Today SEO</a>
+                                                <a class="link-a" href="seoBasic.html">SEO Basic</a>
+                                                <a class="link-a" href="seoAdv.html">SEO Advanced</a>
+                                                <a class="link-a" href="siteSpeed.html">Site Speed</a>
+                                          </div>
+                                    </div>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="pricing.html">PRICING</a>
+                              </li>
+                              <li class="nav-item">
+                                    <div class="dropdown p-2">
+                                          <button class="border-0 bg-white text-dark" type="button">
+                                                RESOURCE
+                                                <img src="/image/drop.png" style="margin-top:-5px; margin-left:5px;">
+                                          </button>
+                                          <div class=" dropdown-content grap">
+                                                <a>Blog</a>
+                                                <a>Testimonials</a>
+                                                <a>Contact Us</a>
+
+                                          </div>
+                                    </div>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="#">PARTNER</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                          <button type="button" class="try-for-free">Try For FREE</button>
+                                    </a>
+
+                              </li>
+
+                        </ul>
+                  </div>
+            </div>
+      </div>
+
+
+
+      <!-- mobile -->
+      <div class="container-fluid shadow-lg bg-body rounded d-none header-mobile-home"
+            style="position: fixed;z-index: 2; display: none;">
+            <div class="row mobile">
+                  <div class="col-3 text-sm-start avatar-col">
+                        <img src="./image/Group1.png" class="avatar-logo">
+                  </div>
+                  <div class="col-1"></div>
+                  <div class="col-5 text-sm-start">
+
+                        <button type="button" class="try-for-free">Try For FREE</button>
+
+                  </div>
+                  <div class="col-2 d-flex justify-content-lg-start">
+                        <button class="fa-solid fa-bars" type="button" data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></button>
+
+
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                              tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                              <div class="offcanvas-header">
+                                    <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Colored with scrolling</h5> -->
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                          aria-label="Close"></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                    <a class="nav-link active " aria-current="page" href="#"
+                                          style="padding: 0.5em 0em;color:#4D4E50">HOME</a>
+                                    <p>
+                                          <button class="border-0 bg-white text-dark border-0  button-home"
+                                                data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                                aria-expanded="false" aria-controls="collapseExample">
+                                                FEATURE
+                                                <img src="/image/drop.png" style="margin-top:-5px; margin-left:5px;">
+                                          </button>
+                                    <div class="collapse" id="collapseExample">
+                                          <div class="card card-body feature-bt">
+                                                <div class=" grap">
+                                                      <a href="todaySeo.html">Today SEO</a>
+                                                      <a href="seoBasic.html">SEO Basic</a>
+                                                      <a href="seoAdv.html">SEO Advanced</a>
+                                                      <a href="siteSpeed.html">Site Speed</a>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    </p>
+
+                                    <p><a class="nav-link active " aria-current="page" href="#"
+                                                style="padding: 0.2em 0em;color:#4D4E50">PRICING</a></p>
+                                    <p>
+                                          <button class="border-0 bg-white text-dark border-0 button-home"
+                                                data-bs-toggle="collapse" href="#collapseExample1" role="button"
+                                                aria-expanded="false" aria-controls="collapseExample"
+                                                style="margin-top: 0em;">
+                                                RESOURCE
+                                                <img src="/image/drop.png" style="margin-top:-5px; margin-left:5px;">
+                                          </button>
+                                    <div class="collapse" id="collapseExample1">
+                                          <div class="card card-body feature-bt">
+                                                <div class=" grap">
+                                                      <p><a>Blog</a></p>
+                                                      <p><a>Testimonials</a></p>
+                                                      <p><a>Contact Us</a></p>
+
+                                                </div>
+                                          </div>
+                                    </div>
+                                    </p>
+                                    <p><a class="nav-link active " aria-current="page" href="#"
+                                                style="padding: 0.2em 0em;color:#4D4E50">PARTNER</a></p>
+
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+
+</header>
+
+<body>
+      <br> <br> <br> <br>
+      <div class="container-fluid justify-content-around">
+            <div class="row blog-row1 mt-5 p-3 py-5 px-5">
+                  <div class="col-2"></div>
+                  <div class="col-6 text-sm-start " style="color: #999999;">
+                       <a href="home.html">home / </a>
+                       <a href="blog.html"> Blog</a>
+                       <br>
+                       <br>
+                       <button class="bt-blog blog-ct1">ECommerce SEO</button>
+                       <span style="margin-left: 4em;">Apr 20, 2022</span>
+                  </div>
+                  <div class="col-3 blogct1-bt-4 d-flex">
+                      
+                        <p class="mx-3" style="color: #999999;">  <br><br>SHARE</p>
+                        <div><br><br>
+                              <img class="mx-2" src="./image/blog/blogc1.png" />
+                              <img class="mx-2" src="./image/blog/blogc2.png" />
+                              <img class="mx-2" src="./image/blog/blogc3.png" />
+                        </div>
+
+                  </div>
+            </div>
+            <div class="row row2-blogct1 mt-4 p-3 py-5 px-5">
+                  <div class="col-2"></div>
+                  <div class="col-10">
+                        <h1 style="color: #4D4E50;">Rajdeep Gahir | Wing It Cosmetics</h1>
+                  </div>
+                  <div class="col-2"></div>
+                  <div class="col-10">
+                        <img class="blogc4" src="./image/blog/blogc4.png" />
+                        <p class="blogc4-1">
+                              Rajdeep Gahir is the founder of <span style="color:#FF3C00 ;">Wing It Cosmetics</span>, a company which creates innovative, game-changing beauty products. After a 
+                              testing experience with a false eyelash kit, Raj set out to find the best lash  solution on the market. However, she soon 
+                              realised that there was no product out there which made such a common beauty practice any easier. Out of this, Wing It was
+                               born to provide a natural-looking and easy-to-apply false lash experience. Wing It was started at the height of Covid in 2020 
+                               and in spite of the timing, the brand has taken flight since then.
+                        </p>
+                  </div>
+
+                  <div class="col-2"></div>
+                  <div class="col-10">
+                        <h3 class="blogc5-1">Hatching the Plans for a New Kind of Lash Solution</h3>
+                        <img class="blogc5" src="./image/blog/blogc5.png" />
+                        <p class="blogc4-1">
+                              With the pace of her day-job significantly slowed down due to the pandemic, Rajdeep had a lot of time to reflect. Some 
+                              realisations dawned on her which changed the course of her career:
+                        </p>
+                        <p class="blogc4-1">
+                              “I had been in real estate for a long time, and then the pandemic came 
+                              along and it really changed that industry. It just slowed everything down. 
+                              I realised the only thing that we could do in lockdown was spend a lot more
+                               time online and I always found e-commerce quite fascinating. I thought of it
+                                as an interesting counterbalance to real estate so I really wanted to explore it. 
+                                I started reading a lot around ecommerce and doing my homework,” Rajdeep said.
+                        </p>
+                        <p class="blogc4-1">
+                              However, an experience at a wedding with a malfunctioning false lash kit really crystallised the idea for Rajdeep’s brand.
+                        </p>
+                        <p class="blogc4-1">
+                              “At the last wedding I had been to before the pandemic started, one of my best 
+                              friends and I had bought some false eyelashes for about £15 and we had to buy a tube 
+                              of glue with them separately. I tried to put them on for the wedding and I literally got 
+                              the tube of glue all over my hands, all over the lashes and completely ruined them. And I just 
+                              said to myself, ‘What is this? How did this happen?’ I'm quite good with makeup and art, and I 
+                              have quite a steady hand, So it just fascinated me that there wasn't a better false eyelash solution 
+                              out there. It was just this feeling that in this day and age, there must be a better way to do 
+                              this than to put a tube of glue on your eye,” Rajdeep told me.
+                        </p>
+                        <p class="blogc4-1">
+                              These two forces- her mildly traumatic pre-wedding incident and a fascination in ecommerce- combined 
+                              to give birth to Wing It. Wing It’s false eyelashes are a natural-look, non-toxic, vegan alternative to 
+                              the gluey, not so glamorous lashes so common within the beauty industry. “I went through months of testing
+                               different styles and different materials because what I found is that traditionally lashes were not always of 
+                               the best quality, even though you could pay quite a lot for them. They looked a bit fake, not very natural and
+                                had a one time use,” Rajdeep said, “so we just wanted to really make the best product in its class, a really 
+                                lovely feel, luxury lash.”
+                              
+                              
+                              
+                              
+                        </p>
+                        <h3 class="blogc5-1">Spreading their Wings in the Market</h3>
+                        <p class="blogc4-1">
+                              “The first product that we really launched to the market was a new type of lash and liner system. This included an eyeliner which had an adhesive in it, but you 
+                              just put it on like a normal eyeliner, and then the lashes stick on very easily. It was quick to apply, waterproof and windproof."
+                        </p>
+                        <img class="blogc4" src="./image/blog/blogc6.png" />
+                        <p class="blogc4-1">
+                              Rajdeep didn’t only take inspiration from her own nightmare 
+                              experience with false lashes, she also spoke to friends and 
+                              colleagues who were too intimidated to even try lashes because of 
+                              the complexity of trying to stick them on. “We wanted something which 
+                              every woman could feel comfortable with,” Rajdeep said, “and that was 
+                              the real problem that we were trying to solve.”
+                        </p>
+                        <p class="blogc4-1">
+                              The name Wing It really encapsulates the ethos of the brand.
+                               “The whole idea was that you can give yourself wings,” said Rajdeep,
+                                “and you can wing it in the colloquial sense too with quick, easy 
+                                beauty hacks and solutions. Once we hit upon the spirit of this, we
+                                 realised that we had a really interesting segment of the market which
+                                  was untapped.”
+                        </p>
+                        <h3 class="blogc5-1">Building Confidence in their Customer Base and Themselves</h3>
+                        <p class="blogc4-1">
+                              After launching their product, it became clear to Rajdeep who Wing It’s audience were and what they were really selling.
+                        </p>
+                        <p class="blogc4-1">
+                              "We're focused on functional tools and beauty 
+                              tricks for women on the go. High impact solutions that are quick and easy. 
+                              That's what we came to realise after the launch. We found that our audience was slightly 
+                              more mature, and when I say mature, I don't mean old by any means. Our core customer 
+                              is about 35 to 50. This is in complete contrast to a lot of cosmetic and lash companies 
+                              that are hyper-targeted at a very young, glamour focused type consumer. It often completely
+                               excludes the kind of people who purchase our products," Rajdeep said.
+                        </p>
+                        <img class="blogc5" src="./image/blog/blogc7.png" />
+                        <p class="blogc4-1">
+                              As they got to know their target market better, something which really struck Rajdeep was how linked to a person's self esteem these kinds of lash products were. "We often find it's women who are looking for solutions that solve confidence issues," she said. "A lot of our customers on the lash side, are women who have gone through cancer treatment who suffer from alopecia. In some of our recent reviews on Judge.me, we’ve even seen a few men leave feedback and say, ‘Hey, this was the most natural lash solution that we could find out there. Thank you.’”
+                        </p>
+                        <p class="blogc4-1">
+                              It was this confidence-building effect which lit the path for the development of Wing It’s next product line.
+                        </p>
+                        <p class="blogc4-1">
+                              “Generally with hair, you want it in some parts of your face, you don't want it in other areas,'' Rajdeep told me. “It's correlated with building confidence. The next product range that we launched, which has done incredibly well, were
+                        </p>
+                        <img class="blogc5" src="./image/blog/blogc8.png" />
+                        <p class="blogc4-1">
+                              Essentially it’s facial hair removal. Again, the reason we launched it was because it's tied to an audience who is just searching for something that is quick, easy, and gives them a confidence boost. What really differentiates us as a company, is that there’s no other brand out there that is really focused on what I call facial hair confidence - you want it in some areas, you don't want it in others.”
+                        </p>
+                        <h3 class="blogc5-1">Building Social Proof into the Business Plan</h3>
+                        <p class="blogc4-1">
+                              For Rajdeep, reviews and recommendations were always part of her strategy with Wing It. “It was just part of the business plan to have reviews built in,” she said. They provided invaluable feedback to help improve the customer journey and grow their business. She also employed some unique tactics when initially trying to get customer reviews.
+                        </p>
+                        <img class="blogc5" src="./image/blog/blogc9.png" />
+                        <p class="blogc4-1">
+                              Notes because I was really touched by all the first orders. In them I said, ‘Hey, thank you so much for your purchase, can you please leave a review or recommendation? I think that when you write a long handwritten note to hundreds of people, it’s that personal touch that really gets you the review” Rajdeep told me. “We can't do it anymore of course, but we still put personalised printed notes into every order. I honestly think it would have been so much harder, without reviews from the get-go because we were an unknown brand. The only thing people can go on is how good your website is and what other people are saying about you.”
+                        </p>
+                       
+                        
+                  </div>
+
+            </div>
+            <div class="row today-seo-row-3 p-3 py-5 px-5 justify-content-center" style="background-color: #FAFAFA;">
+                  <div class="col-2"></div>
+                  <div class="col-10" style="font-weight: 600;">
+                       <h1 style="color: #FC6232;">Related Articles</h1> 
+                       
+                  </div>
+                  <div class="col-12" style="width: 70%;">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                              <div class="col p-5 ">
+                                    <div class="card h-100 bg-white p-2">
+                                          <img src="/image/mmmm.png" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                                <h5 class="card-title">8 EASY steps of SHOPIFY SEO optimization to TOP 1
+                                                </h5>
+                                                <p class="br-footer-cart1"></p>
+                                                <div class="footer-cart d-flex justify-content-between"
+                                                      style="width: 100%;">
+                                                      <div class="d-flex footer-cart-time" style="width: 100%;">
+
+                                                            <p class="content1-cart">GUIDES</p>
+                                                            <p class="content2-cart mx-3">Apr 8, 2022</p>
+                                                            
+                                                      </div>
+                                                      <div>
+                                                            <p class="content3-cart">
+                                                                  <img src="/image/card.png">
+                                                            </p>
+                                                      </div>
+                                                </div>
+                                          </div>
+
+                                    </div>
+                              </div>
+                              <div class="col p-5 ">
+                                    <div class="card h-100 bg-white p-2">
+                                          <img src="/image/anh2.png" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                                <a>
+                                                      <h5 class="card-title">6 Digital CX Strategies eCommerce Owners
+                                                            Should Know
+                                                      </h5>
+                                                </a>
+                                                <div class="footer-cart d-flex justify-content-between"
+                                                      style="width: 100%;">
+                                                      <div class="d-flex footer-cart-time" >
+
+                                                            <p class="content1-cart">GUIDES</p>
+                                                            <p class="content2-cart mx-3">Apr 8, 2022</p>
+                                                      </div>
+                                                      <div>
+                                                            <p class="content3-cart">
+                                                                  <img src="/image/card.png">
+                                                            </p>
+                                                      </div>
+                                                </div>
+                                          </div>
+
+                                    </div>
+                              </div>
+                              <div class="col p-5 ">
+                                    <div class="card h-100 bg-white p-2">
+                                          <img src="/image/anh3.png" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                                <h5 class="card-title">The Best Content Writing Tips For SEO Experts
+                                                      <span class="br-footer-cart">ddnnnnnnnnnnnnnnnnnnnn</span></h5>
+                                                <!-- <p class="br-footer-cart"><p> -->
+                                                <div class="footer-cart d-flex justify-content-between"
+                                                      style="width: 100%;">
+                                                      <div class="d-flex footer-cart-time" style="width: 100%;">
+                                                            <p class="content1-cart">GUIDES</p>
+                                                            <p class="content2-cart mx-3">Apr 8, 2022</p>
+                                                      </div>
+                                                      <div>
+                                                            <p class="content3-cart">
+                                                                  <img src="/image/card.png">
+                                                            </p>
+                                                      </div>
+                                                </div>
+                                          </div>
+
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="row row-cols-2 d-flex justify-content-center">
+                              <button class="see-more-button">See More</button>
+                        </div>
+
+                  </div>
+
+            </div>
+            <div class="row blog-row4 p-2">
+                  <div class="col-12 d-flex justify-content-center p-4">
+
+                        <div class="image-row4-blog">
+                              <img src="./image/blog/blog6.png" />
+                        </div>
+                        <div class="input-row4-blog">
+                              <p>
+                                    Get the latest news and tips from us
+                              </p>
+                              <div class="d-flex">
+                                    <input placeholder="Enter your email address" />
+                                    <button class="Subscribe-blog">Subscribe</button>
+                              </div>
+                        </div>
+                  </div>
+
+            </div>
+
+      </div>
+
+
+
+      <footer>
+            <div class="container-fluid home-footer">
+                  <div class="row row-footer-1">
+                        <div class="col-3 text-end">
+                              <img src="./image/avatar.png" alt="">
+                              <div style="margin-right:30px;">
+                                    <img src="./image/face.png" alt="">
+                                    <img src="./image/tw.png" alt="">
+                                    <img src="./image/yt.png" alt="">
+                                    <img src="./image/int.png" alt="">
+
+                              </div>
+                        </div>
+                        <div class="col-1 text-sm-start mt-4 mx-5">
+                              <p style="width: 70%;">Resources</p>
+                              <br>
+                              <a>FAQs</a>
+                              <br>
+
+                              <a>Change Log</a>
+                              <br>
+
+                              <a>API docs</a>
+                              <br>
+
+                              <a>App integrations</a>
+                        </div>
+                        <div class="col-2 text-sm-start mt-4 mx-3">
+                              <p>Others</p>
+                              <br>
+                              <a>About Us</a>
+                              <br>
+                              <a>Cookie Manager</a>
+                              <br>
+
+                              <a>Privacy Policy</a>
+                              <br>
+
+                              <a>Terms & Conditions</a>
+                              <br>
+
+                              <a>Contact Us</a>
+                        </div>
+                        <div class="col-2 text-sm-start mt-4 mx-3">
+                              <p>Partners</p>
+                              <br>
+                              <a>Our Partners</a>
+                              <br>
+                              <a>Affiliate Program</a>
+                              <br>
+
+
+                        </div>
+                        <div class="col-3 mt-4 mx-3">
+                              <span style="font-size: 14px;">Subscribe to our newsletter and be the first to know about
+                                    our updates</span>
+                              <br>
+                              <br>
+                              <div style="height: 100%;margin-top: -9px;">
+                                    <input class="input-desktop-home" style="border: none;height: 29%;"
+                                          placeholder="Email Address" />
+                                    <button>Subscribe</button>
+                                    <br>
+                                    <img style="margin-top: 20px;" src="image/image 43.png">
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="row footer-row-2 text-end mt-3">
+                        <div class="col-12 mt-3 py-3  my-3 text-center">
+                              Copyright © 2020. All rights reserved.
+                        </div>
+                  </div>
+            </div>
+
+
+            <!-- mobile footer -->
+            <div class="container-fluid d-none mobile-footer-home">
+                  <div class="row">
+                        <div class="col-12">
+                              <img src="./image/avatar.png" alt="" class="avatar-footer">
+                              <div style="margin-top:2em;">
+                                    <img src="./image/face.png" alt="" class="mx-2">
+                                    <img src="./image/tw.png" alt="" class="mx-2">
+                                    <img src="./image/yt.png" alt="" class="mx-2">
+                                    <img src="./image/int.png" alt="" class="mx-2">
+                              </div>
+                              <div class="col-12 mt-3 p-2">
+                                    <h1>Resources</h1>
+                                    <p>FAQS</p>
+                                    <p>Change Log</p>
+                                    <p>API docs</p>
+                                    <p>App integrations</p>
+                              </div>
+                              <div class="col-12 mt-5 p-2">
+                                    <h1>Others</h1>
+                                    <p>About Us</p>
+                                    <p>Cookie Manager</p>
+                                    <p>Privacy Policy</p>
+                                    <p>Terms & Conditions</p>
+                                    <p>Contact Us</p>
+                              </div>
+                              <div class="col-12 mt-5 p-2">
+                                    <h1>
+                                          Partners
+                                    </h1>
+                                    <p>Our Partners</p>
+                                    <p>Affiliate Program</p>
+                              </div>
+                              <div class="col-12 mt-5 p-2">
+                                    <p>Subscribe to our newsletter and be the first to know about our updates</p>
+
+                                    <div style="height: 100%;">
+                                          <input style="border: none;height: 2em;width: 60%;"
+                                                placeholder="Email Address" />
+                                          <button
+                                                style="border: none;color: red;background-color: #FFF;">Subscribe</button>
+                                          <br>
+                                          <img style="margin-top: 20px;" src="image/image 43.png">
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </footer>
+
+
+</html>

@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styleTodaySeo.css" />
+
+  <link rel="stylesheet" href="reponsive.css" />
+  <title>seo basic</title>
+</head>
+<header style="z-index: 100;">
+      <div class="header-top d-flex justify-content-center " style="    position: fixed;
+      z-index: 4;left: 0;right: 0;">
+            Compatible with Shopify Online Store 2.0
+      </div>
+  <div class="container-fluid shadow-lg bg-body rounded home-header" style="position: fixed;z-index: 3;">
+    <div class="row p-3 ">
+     
+      <div class="col-3 text-end mx-4">
+
+        <img src="./image/Group1.png">
+      </div>
+      <div class="col-8 d-flex justify-content-center">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="home.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#">Link</a> -->
+            <div class="dropdown p-2">
+              <button class="border-0 bg-white text-dark" type="button">
+                FEATURE
+                <img src="/image/drop.png" style="margin-top:-5px; margin-left:5px;">
+              </button>
+              <div class=" dropdown-content grap">
+                <a href="todaySeo.html">Today SEO</a>
+                <a href="seoBasic.html">SEO Basic</a>
+                <a href="seoAdv.html">SEO Advanced</a>
+                <a href="siteSpeed.html">Site Speed</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">PRICING</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown p-2">
+              <button class="border-0 bg-white text-dark" type="button">
+                RESOURCE
+                <img src="/image/drop.png" style="margin-top:-5px; margin-left:5px;">
+              </button>
+              <div class=" dropdown-content grap">
+                <a>Blog</a>
+                <a>Testimonials</a>
+                <a>Contact Us</a>
+
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PARTNER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <button type="button" class="try-for-free">Try For FREE</button>
+            </a>
+          
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- mobile -->
+  <div class="container-fluid shadow-lg bg-body rounded d-none header-mobile-home" style="position: fixed;z-index: 2; display: none;">
+    <div class="row mobile">
+      <div class="col-3 text-sm-start avatar-col">
+        <img src="./image/Group1.png" class="avatar-logo">
+      </div>
+      <div class="col-1"></div>
+      <div class="col-5 text-sm-start">
+
+        <button type="button" class="try-for-free">Try For FREE</button>
+
+      </div>
+      <div class="col-2 d-flex justify-content-lg-start">
+        <button class="fa-solid fa-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"></button>
+
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+          id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Colored with scrolling</h5> -->
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <a class="nav-link active " aria-current="page" href="#" style="padding: 0.5em 0em;color:#4D4E50">HOME</a>
+            <p>
+              <button class="border-0 bg-white text-dark border-0  button-home" data-bs-toggle="collapse" href="#collapseExample"
+                role="button" aria-expanded="false" aria-controls="collapseExample">
+                FEATURE
+                <img src="/image/drop.png" style="margin-top:-5px; margin-left:5px;">
+              </button>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body feature-bt">
+                  <div class=" grap">
+                    <a href="todaySeo.html">Today SEO</a>
+                <a href="seoBasic.html">SEO Basic</a>
+                <a href="seoAdv.html">SEO Advanced</a>
+                <a href="siteSpeed.html">Site Speed</a>
+                  </div>
+                </div>
+              </div>
+            </p>
+
+            <p><a class="nav-link active " aria-current="page" href="#" style="padding: 0.2em 0em;color:#4D4E50">PRICING</a></p>
+            <p>
+              <button class="border-0 bg-white text-dark border-0 button-home" data-bs-toggle="collapse" href="#collapseExample1"
+                role="button" aria-expanded="false" aria-controls="collapseExample" style="margin-top: 0em;">
+                RESOURCE
+                <img src="/image/drop.png" style="margin-top:-5px; margin-left:5px;">
+              </button>
+            <div class="collapse" id="collapseExample1">
+              <div class="card card-body feature-bt">
+                <div class=" grap">
+                  <p><a>Blog</a></p>
+                  <p><a>Testimonials</a></p>
+                  <p><a>Contact Us</a></p>
+
+                </div>
+              </div>
+            </div>
+            </p>
+            <p><a class="nav-link active " aria-current="page" href="#" style="padding: 0.2em 0em;color:#4D4E50">PARTNER</a></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</header>
+
+<body>
+  <br> <br> <br> <br>
+  <div class="container-fluid mt-5 d-none">
+        <div class="row row-today-seo-1">
+              <div class="col-12 text-center">
+                    <h1 style="color: #FF685C;">What will you have?</h1>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-6 text-center mt-3">
+                    <img class="mt-4" src = "./image/seoAdv/SeoAdv1.png" id="avatar-seo-today"/>
+              </div>
+              <div class="col-4 mt-3" >
+                  <div class="row  mx-3 " onclick="todaySeoClick1()">
+                        
+                        <div class="col-9 overall-seo justify-content-end" id="overall-seo1">
+                            
+                            <div class="overall-content" id="overall-seo2">
+                                  <h4>Index  </h4>
+                                  <p>Help Google better crawl the website and notice new changes </p>
+                            </div>
+                        </div>
+                        <div class="col-2" style="margin-top: 4em;">
+                          <img style="margin-top:-2em" src="./image/seoAdv/adv1_1.png" id="seoAdv1"/>
+                        </div>
+                    
+                  </div>
+                  <div class="row  mx-3 mt-3" style="position: relative;" onclick="todaySeoClick2()">
+                        <div class="col-2"></div>
+                        <div class="col-1 d-flex justify-content-center" style="position: absolute;z-index: 1;">
+                          <img src="/image/seoAdv/adv22.png" style="margin-top: 26px;" id="seoAdv2"> 
+                        </div>
+                        <div class="col-9 overall-seo-noClick " style="z-index: 2;" id="overall-seo3">
+                            <div class="overall-content-noClick" id="overall-seo4">
+                                  <h4>Google Snippets</h4>
+                                  <p>Attract more customers’ attention with highlighted elements on search pages
+                                  </p>
+                            </div>
+                        </div>
+                    
+                  </div>
+                  <div class="row  mx-3 mt-3" style="position: relation;" onclick="todaySeoClick3()">
+                    <div class="col-9 overall-seo-noClick " style="z-index: 2;" id="overall-seo5">
+                        <div class="overall-content-noClick" id="overall-seo6">
+                              <h4>Long URL</h4>
+                              <p>Crawl all long URLs on your site and show how to fix them. </p>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                      <img src="./image/seoAdv/adv33.png" id="seoAdv3" class="all-seo-on-page1"  />
+                    </div>
+                    <div class="col-2"></div>
+                
+                  </div>
+
+                  <div class="row  mx-3 mt-3" style="position: relation;" onclick="todaySeoClick4()">
+                    <div class="col-1">
+                      <img src="./image/seoAdv/adv44.png" id="seoAdv4" class="all-seo-on-page1"  />
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-9 overall-seo-noClick " style="z-index: 2;" id="overall-seo7">
+                        <div class="overall-content-noClick" id="overall-seo8">
+                              <h4>Keyword Research </h4>
+                              <p>Find the ideal keywords to produce trending content for customers </p>
+                        </div>
+                    </div>
+                    
+                  
+                
+                  </div>
+
+                  <div class="row  mx-3 mt-3" style="position: relation;" onclick="todaySeoClick5()">
+                    <div class="col-9 overall-seo-noClick " style="z-index: 2;" id="overall-seo9">
+                        <div class="overall-content-noClick" id="overall-seo10">
+                              <h4>Long URL</h4>
+                              <p>Crawl all long URLs on your site and show how to fix them. </p>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                      <img src="./image/seoAdv/adv55.png" id="seoAdv5" class="all-seo-on-page1"  />
+                    </div>
+                    <div class="col-2"></div>
+                
+                  </div>
+              </div>
+        </div>
+        <div class="row row-today-seo-2 " style="background: #FCFAFA;margin-top: 7em;padding-bottom: 3em;">
+          <div class="col-12 text-center p-5">
+            <h1 style="color: #FF685C;">What merchants talk about Today’SEO?</h1>
+          </div>
+          <div class="d-flex ">
+            <div class="col-1 reposive-today-seo-2" style="margin-left: -20px;"></div>
+            <div class="col-2 text-center d-flex justify-content-center shadow-lg rounded mx-5">
+              <div class="card" style="width: 20rem;border: none;">
+                <div class="card-body card-body-seo-today">
+                  <img src="/image/seoAdv/adv66.png" class="card-today-seo-img" />
+                  <h5 style="font-size: 16px;margin-top: 1em;">Smart Ecomotion
+
+                  </h5>
+                  <img src="./image/today-seo/seo11.png" style="margin-bottom: 1em;" />
+                  <p class="card-text text-start" style="font-size: 14px;">
+                    I use unlimited plan and so far its solved a lot of my issues. The support is outstanding and helps me to fix the problems very fast.
+                    If you are thinking of installing it, don't think twice; install it and go ahead and buy the unlimited plan. You will be super happy!
+                    
+                    
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 text-center d-flex justify-content-center shadow-lg rounded mx-5">
+              <div class="card" style="width: 20rem;border: none;">
+                <div class="card-body card-body-seo-today">
+                  <img src="/image/seoAdv/adv77.png" class="card-today-seo-img" />
+                  <h5 style="font-size: 16px;margin-top: 1em;">EXO Drones
+    
+                  </h5>
+                  <img src="./image/today-seo/seo11.png" style="margin-bottom: 1em;" />
+                  <p class="card-text text-start" style="font-size: 14px;">
+                    Truly one of the best SEO plugins I've ever used, and this is coming from someone who did SEO professionally for almost 8 years. The price is steep, but they more than make up for it with their customer service. Highly recommend the app!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 text-center  d-flex justify-content-center shadow-lg rounded mx-5">
+              <div class="card" style="width: 20rem;border: none;">
+                <div class="card-body card-body-seo-today">
+                  <img src="/image/seoAdv/adv88.png" class="card-today-seo-img" />
+                  <h5 style="font-size: 16px;margin-top: 1em;">Announce Celebrations
+                  </h5>
+                  <img src="./image/today-seo/seo11.png" style="margin-bottom: 1em;" />
+                  <p class="card-text text-start" style="font-size: 14px;">
+                    This app has lot of setting I don't see on other SEO, my site had some issues and Hana and team responded very quickly. They remotely fixed my problem, not once but twice, which is unexpected and they didn't charge me anything. The only downside is not cheap but I’m willing to pay if I continue to get this kind of support.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 text-center d-flex justify-content-center shadow-lg rounded mx-5">
+              <div class="card" style="width: 20rem;border: none;">
+                <div class="card-body card-body-seo-today">
+                  <img src="/image/seoAdv/adv99.png" class="card-today-seo-img" />
+                  <h5 style="font-size: 16px;margin-top: 1em;">Busy Box Child LLC
+
+    
+                  </h5>
+                  <img src="./image/today-seo/seo11.png" style="margin-bottom: 1em;" />
+                  <p class="card-text text-start" style="font-size: 14px;">
+                    I am BEYOND impressed with Hana and SEO booster team! SEO has always been difficult for me, and I have spent thousands of dollars hiring people to do things right. These developers are excellent, and they are available to take the time to chat with you to handle everything. This app is honestly worth every penny.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    
+          <div class="col-12 d-flex justify-content-center mt-5 my-4 ">
+            <button class="today-seo-row-2-button">Install SEO Booster ></button>
+          </div>
+    
+        </div>
+        <div class="row today-seo-row-3 p-3 py-5 px-5">
+          <div class="col-12 text-center" style="font-weight: 600;">
+            SEO Articles
+            <p style="font-size: 20px;font-weight: 400;color: #4D4E50;
+              ">Update new SEO marketing guide and tips from our experts.</p>
+          </div>
+          <div class="col-12">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col p-5 ">
+                <div class="card h-100 bg-white p-2">
+                  <img src="/image/mmmm.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">8 EASY steps of SHOPIFY SEO optimization to TOP 1</h5>
+                    <p class="br-footer-cart1"></p>
+                    <div class="footer-cart d-flex justify-content-between">
+                      <div class="d-flex footer-cart-time" style="width: 56%;">
+    
+                        <p class="content1-cart">GUIDES</p>
+                        <p class="content2-cart mx-3">Apr 8, 2022</p>
+                      </div>
+                      <div>
+                        <p class="content3-cart">
+                          <img src="/image/card.png">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
+              <div class="col p-5 ">
+                <div class="card h-100 bg-white p-2">
+                  <img src="/image/anh2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a>
+                      <h5 class="card-title">6 Digital CX Strategies eCommerce Owners Should Know
+                      </h5>
+                    </a>
+                    <div class="footer-cart d-flex justify-content-between">
+                      <div class="d-flex footer-cart-time" style="width: 56%;">
+    
+                        <p class="content1-cart">GUIDES</p>
+                        <p class="content2-cart mx-3">Apr 8, 2022</p>
+                      </div>
+                      <div>
+                        <p class="content3-cart">
+                          <img src="/image/card.png">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
+              <div class="col p-5 ">
+                <div class="card h-100 bg-white p-2">
+                  <img src="/image/anh3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">The Best Content Writing Tips For SEO Experts <span
+                        class="br-footer-cart">ddnnnnnnnnnnnnnnnnnnnn</span></h5>
+                    <!-- <p class="br-footer-cart"><p> -->
+                    <div class="footer-cart d-flex justify-content-between">
+                      <div class="d-flex footer-cart-time" style="width: 56%;">
+                        <p class="content1-cart">GUIDES</p>
+                        <p class="content2-cart mx-3">Apr 8, 2022</p>
+                      </div>
+                      <div>
+                        <p class="content3-cart">
+                          <img src="/image/card.png">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
+            </div>
+            <div class="row row-cols-2 d-flex justify-content-center">
+              <button class="see-more-button">See More</button>
+            </div>
+    
+          </div>
+    
+        </div>
+        
+  </div>
+
+
+  <div class="container-fluid seoAdv-mobile-body">
+      <div class="row">
+        <div class="col-12 my-3 111111" onclick="mobile1()">
+        
+            <!-- <button > -->
+
+              <div class=" overall-seo justify-content-end" id="overall-seo1-mobile" data-bs-toggle="collapse" data-bs-target="#today1">
+
+                <div class="overall-content" id="overall-seo2-mobile">
+                  <div class="d-flex justify-content-between">
+                    <h4 style="font-size:18px">Index 
+                      <p style="font-size: 14px;font-weight: 400;color: #4D4E50;">Help Google better crawl the website and notice new changes </p>
+                    </h4>
+                    <img  src="./image/seoAdv/adv1_1.png"  id="seo1-mobile" />
+                  </div>
+
+                  <!-- <img style="margin-top:-2em" src="./image/today-seo/seo2_2.png" id="seo2" /> -->
+                 
+                </div>
+              </div>
+            <!-- </button> -->
+          <div class="col-12">
+            <div class="collapse show" id="today1" >
+              <div class="card-row-3-1 card-body">
+                <img src="./image/seoAdv/SeoAdv1.png"  style="width: 100%;"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 my-3 22222222" onclick="mobile2()">
+        
+          <!-- <button > -->
+
+            <div class="col-12 overall-seo-noClick " style="z-index: 2;" id="overall-seo3-mobile" data-bs-toggle="collapse" data-bs-target="#today3">
+              <div class="overall-content-noClick" id="overall-seo4-mobile">
+                <div class="d-flex justify-content-between">
+                  <img src="/image/seoAdv/adv22.png"   style="width: 24%;margin-left: -0.5em;" id="seo2-mobile"/>
+                  <h4 style="margin-top: 0.5em; font-size: 18px;margin-left: 0.5em;">Google Snippets 
+                    <p style="font-size: 14px;font-weight: 400;color: #4D4E50;">Attract more customers’ attention with highlighted elements on search pages </p>
+                  </h4>
+                </div>
+
+              
+              </div>
+            </div>
+
+          
+          <!-- </button> -->
+        <div class="col-12">
+          <div class="collapse " id="today3">
+            <div class="card-row-3-1 card-body">
+              <img src="./image/seoAdv/SeoAdv2.png"  style="width: 100%;"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 my-3 333333" onclick="mobile3()">
+        
+        <!-- <button > -->
+
+          <div class="col-12 overall-seo-noClick " style="z-index: 2;" id="overall-seo5-mobile" data-bs-toggle="collapse" data-bs-target="#today5">
+            <div class="overall-content-noClick" id="overall-seo6-mobile">
+              <div class="d-flex justify-content-between">
+              
+                <h4 style="font-size: 18px; margin-top:0.5em;">Long URL 
+                  <p style="font-size: 14px;margin-top: 0.5em;  color: #4D4E50; font-weight: 400;">Crawl all long URLs on your site and show how to fix them. </p>
+                </h4>
+                <img src="./image/seoAdv/adv33.png"  id="seo3-mobile"/>
+              </div>
+
+              
+            </div>
+          </div>
+
+        
+        <!-- </button> -->
+      <div class="col-12">
+        <div class="collapse " id="today5">
+          <div class="card-row-3-1 card-body">
+            <img src="./image/seoAdv/SeoAdv3.png"  style="width: 100%;"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 my-3 " onclick="mobile4()">
+        
+      <!-- <button > -->
+
+        <div class="col-12 overall-seo-noClick " style="z-index: 2;" id="overall-seo7-mobile" data-bs-toggle="collapse" data-bs-target="#today7">
+          <div class="overall-content-noClick" id="overall-seo8-mobile">
+            <div class="d-flex justify-content-between">
+            
+              <img src="./image/seoAdv/adv44.png"   style="margin-left: -0.5em;margin-right: 0.5em;" id="seo4-mobile"/>
+              <h4 style="font-size: 18px; margin-top: 1em;">Keyword Research
+                <p style="font-size: 14px; color: #4D4E50; font-weight: 400;">Find the ideal keywords to produce trending content for customers</p>
+              </h4>
+            </div>
+  
+          
+          </div>
+        </div>
+
+      
+      <!-- </button> -->
+    <div class="col-12">
+      <div class="collapse " id="today7">
+        <div class="card-row-3-1 card-body">
+          <img src="./image/seoAdv/SeoAdv4.png" style="width: 100%;"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 my-3 " onclick="mobile5()">
+        
+    <!-- <button > -->
+
+      <div class="col-12 overall-seo-noClick " style="z-index: 2;" id="overall-seo9-mobile" data-bs-toggle="collapse" data-bs-target="#today9">
+        <div class="overall-content-noClick" id="overall-seo10-mobile">
+          <div class="d-flex justify-content-between">
+          
+          
+            <h4 style="font-size: 18px; margin-top: 1em;">Long URL
+              <p style="font-size: 14px; color: #4D4E50; font-weight: 400;">Crawl all long URLs on your site and show how to fix them.</p>
+            </h4>
+            <img src="./image/seoAdv/adv55.png"   style="margin-left: 0.5em;margin-right: 0.5em;" id="seo5-mobile"/>
+          </div>
+
+        
+        </div>
+      </div>
+
+    
+    <!-- </button> -->
+  <div class="col-12">
+    <div class="collapse " id="today9">
+      <div class="card-row-3-1 card-body">
+        <img src="./image/seoAdv/aeoAdv5.png" style="width: 100%;"/>
+      </div>
+    </div>
+  </div>
+</div>
+      
+      </div>
+  </div>
+  <!-- mobile  body-->
+
+  <footer>
+    <div class="container-fluid home-footer">
+      <div class="row row-footer-1">
+        <div class="col-3 text-end">
+          <img src="./image/avatar.png" alt="">
+          <div style="margin-right:30px;">
+            <img src="./image/face.png" alt="">
+            <img src="./image/tw.png" alt="">
+            <img src="./image/yt.png" alt="">
+            <img src="./image/int.png" alt="">
+
+          </div>
+        </div>
+        <div class="col-1 text-sm-start mt-4 mx-5">
+          <p style="width: 70%;">Resources</p>
+          <br>
+          <a>FAQs</a>
+          <br>
+
+          <a>Change Log</a>
+          <br>
+
+          <a>API docs</a>
+          <br>
+
+          <a>App integrations</a>
+        </div>
+        <div class="col-2 text-sm-start mt-4 mx-3">
+          <p>Others</p>
+          <br>
+          <a>About Us</a>
+          <br>
+          <a>Cookie Manager</a>
+          <br>
+
+          <a>Privacy Policy</a>
+          <br>
+
+          <a>Terms & Conditions</a>
+          <br>
+
+          <a>Contact Us</a>
+        </div>
+        <div class="col-2 text-sm-start mt-4 mx-3">
+          <p>Partners</p>
+          <br>
+          <a>Our Partners</a>
+          <br>
+          <a>Affiliate Program</a>
+          <br>
+
+
+        </div>
+        <div class="col-3 mt-4 mx-3">
+          <span style="font-size: 14px;">Subscribe to our newsletter and be the first to know about our updates</span>
+          <br>
+          <br>
+          <div style="height: 100%;margin-top: -9px;">
+            <input class="input-desktop-home" style="border: none;height: 29%;" placeholder="Email Address" />
+            <button>Subscribe</button>
+            <br>
+            <img style="margin-top: 20px;" src="image/image 43.png">
+          </div>
+        </div>
+
+      </div>
+      <div class="row footer-row-2 text-end mt-3">
+        <div class="col-12 mt-3 py-3  my-3 text-center">
+          Copyright © 2020. All rights reserved.
+        </div>
+      </div>
+    </div>
+
+
+    <!-- mobile footer -->
+    <div class="container-fluid d-none mobile-footer-home">
+      <div class="row ">
+        <div class="col-12 mt-4">
+          <img src="./image/avatar.png" alt="" class="avatar-footer">
+          <div style="margin-top:2em;">
+            <img src="./image/face.png" alt="" class="mx-2">
+            <img src="./image/tw.png" alt="" class="mx-2">
+            <img src="./image/yt.png" alt="" class="mx-2">
+            <img src="./image/int.png" alt="" class="mx-2">
+          </div>
+          <div class="col-12 mt-3 p-2">
+            <h1>Resources</h1>
+            <p>FAQS</p>
+            <p>Change Log</p>
+            <p>API docs</p>
+            <p>App integrations</p>
+          </div>
+          <div class="col-12 mt-5 p-2">
+            <h1>Others</h1>
+            <p>About Us</p>
+            <p>Cookie Manager</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            <p>Contact Us</p>
+          </div>
+          <div class="col-12 mt-5 p-2">
+            <h1>
+              Partners
+            </h1>
+            <p>Our Partners</p>
+            <p>Affiliate Program</p>
+          </div>
+          <div class="col-12 mt-5 p-2">
+            <p>Subscribe to our newsletter and be the first to know about our updates</p>
+
+            <div style="height: 100%;">
+              <input style="border: none;height: 2em;width: 60%;" placeholder="Email Address" />
+              <button style="border: none;color: red;background-color: #FFF;">Subscribe</button>
+              <br>
+              <img style="margin-top: 20px;" src="image/image 43.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    var a = 1, b = 1, c = 0;
+    const todaySeoClick1 = () => {
+     
+      console.log("hieudz");
+      document.getElementById("avatar-seo-today").src = "./image/seoAdv/SeoAdv1.png";
+      const xxx = `overall-seo${a}`;
+      const xxxx = `overall-seo${a+1}`;
+      const xxxxx = `./image/seoAdv/adv${b}${b}.png`;
+
+      const xx = `seoAdv${b}`
+      console.log(xxxxx);
+      const x= document.getElementById("overall-seo1");
+      x.classList.replace("overall-seo-noClick","overall-seo");
+      document.getElementById("overall-seo2").classList.replace("overall-content-noClick","overall-content");
+      document.getElementById("seoAdv1").src = "./image/seoAdv/adv1_1.png";
+      document.getElementById(xxx).classList.replace("overall-seo","overall-seo-noClick");
+      document.getElementById(xxxx).classList.replace("overall-content","overall-content-noClick");
+      document.getElementById(xx).src = xxxxx;
+      a = 1;b= 1;
+  
+    }
+    const todaySeoClick2 = () => {
+     
+
+      document.getElementById("avatar-seo-today").src = "./image/seoAdv/SeoAdv2.png";
+      const xxx = `overall-seo${a}`;
+      const xxxx = `overall-seo${a+1}`;
+      const xxxxx = `./image/seoAdv/adv${b}${b}.png`;
+
+
+      const xx = `seoAdv${b}`
+      console.log(xx,xxxxx);
+      const x= document.getElementById("overall-seo3");
+      x.classList.replace("overall-seo-noClick","overall-seo");
+      document.getElementById("overall-seo4").classList.replace("overall-content-noClick","overall-content");
+      document.getElementById("seoAdv2").src = "./image/seoAdv/adv2_2.png";
+      document.getElementById(xxx).classList.replace("overall-seo","overall-seo-noClick");
+      document.getElementById(xxxx).classList.replace("overall-content","overall-content-noClick");
+      document.getElementById(xx).src = xxxxx;
+      a = 3;b=2;
+  
+    }
+    const todaySeoClick3 = () => {
+    
+      document.getElementById("avatar-seo-today").src ="./image/seoAdv/SeoAdv3.png";
+      const xxx = `overall-seo${a}`;
+      const xxxx = `overall-seo${a+1}`;
+      const xxxxx = `./image/seoAdv/adv${b}${b}.png`;
+
+
+      const xx = `seoAdv${b}`
+      console.log(xxxxx);
+      const x= document.getElementById("overall-seo5");
+      x.classList.replace("overall-seo-noClick","overall-seo");
+      document.getElementById("overall-seo6").classList.replace("overall-content-noClick","overall-content");
+      document.getElementById("seoAdv3").src = "./image/seoAdv/adv3_3.png";
+      document.getElementById(xxx).classList.replace("overall-seo","overall-seo-noClick");
+      document.getElementById(xxxx).classList.replace("overall-content","overall-content-noClick");
+      document.getElementById(xx).src = xxxxx;
+      a = 5;b=3;
+      
+    }
+    const todaySeoClick4 = () => {
+     
+      document.getElementById("avatar-seo-today").src = "./image/seoAdv/SeoAdv4.png";
+      const xxx = `overall-seo${a}`;
+      const xxxx = `overall-seo${a+1}`;
+      const xxxxx = `./image/seoAdv/adv${b}${b}.png`;
+
+      const xx = `seoAdv${b}`
+      console.log(xxxxx);
+      const x= document.getElementById("overall-seo7");
+      x.classList.replace("overall-seo-noClick","overall-seo");
+      document.getElementById("overall-seo8").classList.replace("overall-content-noClick","overall-content");
+      document.getElementById("seoAdv4").src = "./image/seoAdv/adv4_4.png";
+      document.getElementById(xxx).classList.replace("overall-seo","overall-seo-noClick");
+      document.getElementById(xxxx).classList.replace("overall-content","overall-content-noClick");
+      document.getElementById(xx).src = xxxxx;
+      a = 7;b=4;
+    }
+    const todaySeoClick5 = () => {
+     
+     document.getElementById("avatar-seo-today").src = "./image/seoAdv/aeoAdv5.png";
+     const xxx = `overall-seo${a}`;
+     const xxxx = `overall-seo${a+1}`;
+     const xxxxx = `./image/seoAdv/adv${b}${b}.png`;
+
+     const xx = `seoAdv${b}`
+     console.log(xxxxx);
+     const x= document.getElementById("overall-seo9");
+     x.classList.replace("overall-seo-noClick","overall-seo");
+     document.getElementById("overall-seo10").classList.replace("overall-content-noClick","overall-content");
+     document.getElementById("seoAdv5").src = "./image/seoAdv/adv5_5.png";
+     document.getElementById(xxx).classList.replace("overall-seo","overall-seo-noClick");
+     document.getElementById(xxxx).classList.replace("overall-content","overall-content-noClick");
+     document.getElementById(xx).src = xxxxx;
+     a = 9;b=5;
+   }
+
+   var am = 1, bm = 1, cm = 0;
+    const mobile1 = () => {
+      const image = `today${am}`;
+      
+      const icon = `seo${bm}-mobile`
+      const icon_toi = `./image/seoAdv/adv${bm}${bm}.png`
+     
+      const BackGroud = `overall-seo${am}-mobile`;
+      const KeXanh = `overall-seo${am + 1}-mobile`;
+      document.getElementById(image).classList.remove("show");
+      // cho thanh ko click th truoc no
+      document.getElementById(BackGroud).classList.replace("overall-seo", "overall-seo-noClick");
+      document.getElementById(KeXanh).classList.replace("overall-content", "overall-content-noClick");
+      document.getElementById(icon).src = icon_toi;
+     // cho thanh  click hien tai
+     document.getElementById("seo1-mobile").src = "./image/seoAdv/adv1_1.png"
+      const x = document.getElementById("overall-seo1-mobile");
+      x.classList.replace("overall-seo-noClick", "overall-seo");
+      document.getElementById("overall-seo2-mobile").classList.replace("overall-content-noClick", "overall-content");
+      
+      // end 
+      console.log("ammm: ", am);
+      // if(am != 1){
+      //   console.log("ammm: ", am);
+      //     document.getElementById(image).classList.replace("d-block", "d-none");
+      //     document.getElementById("today1").classList.replace("d-none", "d-block");
+      // }
+     
+      am = 1; bm = 1;
+
+    }
+    const mobile2 = () => {
+
+      const image = `today${am}`;
+      const icon = `seo${bm}-mobile`
+      const icon_toi = `./image/seoAdv/adv${bm}${bm}.png`
+      const BackGroud = `overall-seo${am}-mobile`;
+      const KeXanh = `overall-seo${am + 1}-mobile`;
+      document.getElementById(image).classList.remove("show");
+      // mat cua th truoc
+      document.getElementById(BackGroud).classList.replace("overall-seo", "overall-seo-noClick");
+      document.getElementById(KeXanh).classList.replace("overall-content", "overall-content-noClick");
+      document.getElementById(icon).src = icon_toi;
+      // cho thanh click hien tai
+      document.getElementById("seo2-mobile").src = "./image/seoAdv/adv2_2.png"
+      const x = document.getElementById("overall-seo3-mobile");
+      x.classList.replace("overall-seo-noClick", "overall-seo");
+      document.getElementById("overall-seo4-mobile").classList.replace("overall-content-noClick", "overall-content");
+      // document.getElementById("today3").classList.replace("d-none", "d-block");
+   
+      am = 3; bm = 2;
+
+    }
+    const mobile3 = () => {
+      const image = `today${am}`;
+      const icon = `seo${bm}-mobile`
+      const icon_toi = `./image/seoAdv/adv${bm}${bm}.png`
+     
+      const BackGroud = `overall-seo${am}-mobile`;
+      const KeXanh = `overall-seo${am + 1}-mobile`;
+      document.getElementById(image).classList.remove("show");
+      //mat cai click cua thang truoc 
+   
+      document.getElementById(BackGroud).classList.replace("overall-seo", "overall-seo-noClick");
+      document.getElementById(KeXanh).classList.replace("overall-content", "overall-content-noClick");
+      document.getElementById(icon).src = icon_toi;
+      // cho thanh click
+      document.getElementById("seo3-mobile").src = "./image/seoAdv/adv3_3.png"
+      const x = document.getElementById("overall-seo5-mobile");
+      x.classList.replace("overall-seo-noClick", "overall-seo");
+      document.getElementById("overall-seo6-mobile").classList.replace("overall-content-noClick", "overall-content");
+      
+    
+      am = 5; bm = 3;
+
+    }
+    const mobile4 = () => {
+      const image = `today${am}`;
+      const icon = `seo${bm}-mobile`
+      const icon_toi = `./image/seoAdv/adv${bm}${bm}.png`
+      const BackGroud = `overall-seo${am}-mobile`;
+      const KeXanh = `overall-seo${am + 1}-mobile`;
+      //
+      document.getElementById(image).classList.remove("show");
+      document.getElementById(BackGroud).classList.replace("overall-seo", "overall-seo-noClick");
+      document.getElementById(KeXanh).classList.replace("overall-content", "overall-content-noClick");
+      document.getElementById(icon).src = icon_toi;
+     // cho thanh  click hien tai
+     document.getElementById("seo4-mobile").src = "./image/seoAdv/adv4_4.png"
+      const x = document.getElementById("overall-seo7-mobile");
+      x.classList.replace("overall-seo-noClick", "overall-seo");
+      document.getElementById("overall-seo8-mobile").classList.replace("overall-content-noClick", "overall-content");
+      am = 7; bm = 4;
+
+    }
+
+  
+  </script>
+
+</html>

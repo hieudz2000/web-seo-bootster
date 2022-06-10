@@ -1,0 +1,85 @@
+.card-today-seo-img{
+      border-radius: 100%;
+}
+.home-hv-why-seo:hover
+
+{
+    
+      transform: scale3d(1.02, 1.02, 1);
+       /* box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15); */
+}
+.home-hv-why-seo:focus::after {
+      opacity: 1;
+}
+.today-seo-row-2-button{
+      color: white;
+      background-color: #38CB89;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      width: 13%;
+}
+
+.today-seo-row-3{
+      background-color: #FFFFFF;
+
+}
+
+.today-seo-row-3 div:first-child{
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 18px;
+/* or 46% */
+
+
+
+      color: #FC6232;
+}
+.today-seo-row-3 div p{
+      margin-top: 30px;
+      font-weight: 400;
+      font-size: 14px;
+      
+      padding-top: 3px;
+      color: #B7B7B7;
+      
+}
+
+.iframe-seo-basic{
+      height: 30em;
+      width: 38%;
+ }
+
+ /* ///pricing */
+ .pricing-h1{
+       color: #FC6232;
+       font-weight: 600;
+       font-size: 40px;
+
+ }
+ .pricing-p{
+       font-size: 14px;
+       font-weight: 400;
+
+      color: #7e7e7e;
+ }
+
+.bt1-pricing{
+      border: none;
+      width: 10%;
+      border-radius: 5px;
+}
+.icon-pricing{
+      margin-left: -7em;
+      margin-top: 1em;
+  
+}
+.sb-hight-light1{
+      color: rgb(0, 0, 0); 
+      background-color: rgb(255, 255, 255);
+}
+.sb-hight-light2{
+      color: rgb(255, 255, 255); 
+      background-color: rgb(56, 56, 58);
+
+}

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styleTodaySeo.css" />
+
+  <link rel="stylesheet" href="reponsive.css" />
+  <title>Pricing</title>
+</head>
+<header style="z-index: 100;">
+     
+  <div class="container-fluid shadow-lg bg-body rounded home-header" style="position: fixed;z-index: 3;">
+    <div class="row p-3 ">
+     
+      <div class="col-3 text-end mx-4">
+
+        <img src="./image/Group1.png">
+      </div>
+      <div class="col-8 d-flex justify-content-center">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="home.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#">Link</a> -->
+            <div class="dropdown p-2">
+              <button class="border-0 bg-white text-dark" type="button">
+                FEATURE
+                <img src="/image/drop.png" style="margin-top:-5px; margin-left:5px;">
+              </button>
+              <div class=" dropdown-content grap">
+                <a class="link-a" href="todaySeo.html">Today SEO</a>
+                <a class="link-a" href="seoBasic.html">SEO Basic</a>
+                <a class="link-a" href="seoAdv.html">SEO Advanced</a>
+                <a class="link-a" href="siteSpeed.html">Site Speed</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">PRICING</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown p-2">
+              <button class="border-0 bg-white text-dark" type="button">
+                RESOURCE
+                <img src="/image/drop.png" style="margin-top:-5px; margin-left:5px;">
+              </button>
+              <div class=" dropdown-content grap">
+                <a class="link-a" href="blog.html">Blog</a>
+                <a>Testimonials</a>
+                <a>Contact Us</a>
+
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PARTNER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <button type="button" class="try-for-free">Try For FREE</button>
+            </a>
+          
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- mobile -->
+  <div class="container-fluid shadow-lg bg-body rounded d-none header-mobile-home" style="position: fixed;z-index: 2; display: none;">
+    <div class="row mobile">
+      <div class="col-3 text-sm-start avatar-col">
+        <img src="./image/Group1.png" class="avatar-logo">
+      </div>
+      <div class="col-1"></div>
+      <div class="col-5 text-sm-start">
+
+        <button type="button" class="try-for-free">Try For FREE</button>
+
+      </div>
+      <div class="col-2 d-flex justify-content-lg-start">
+        <button class="fa-solid fa-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"></button>
+
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+          id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Colored with scrolling</h5> -->
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <a class="nav-link active " aria-current="page" href="#" style="padding: 0.5em 0em;color:#4D4E50">HOME</a>
+            <p>
+              <button class="border-0 bg-white text-dark border-0  button-home" data-bs-toggle="collapse" href="#collapseExample"
+                role="button" aria-expanded="false" aria-controls="collapseExample">
+                FEATURE
+                <img src="/image/drop.png" style="margin-top:-5px; margin-left:5px;">
+              </button>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body feature-bt">
+                  <div class=" grap">
+                    <p><a>Today SEO</a></p>
+                    <p><a>SEO Basic</a></p>
+                    <p><a>SEO Advanced</a></p>
+                    <p><a>Site Speed</a></p>
+                  </div>
+                </div>
+              </div>
+            </p>
+
+            <p><a class="nav-link active " aria-current="page" href="#" style="padding: 0.2em 0em;color:#4D4E50">PRICING</a></p>
+            <p>
+              <button class="border-0 bg-white text-dark border-0 button-home" data-bs-toggle="collapse" href="#collapseExample1"
+                role="button" aria-expanded="false" aria-controls="collapseExample" style="margin-top: 0em;">
+                RESOURCE
+                <img src="/image/drop.png" style="margin-top:-5px; margin-left:5px;">
+              </button>
+            <div class="collapse" id="collapseExample1">
+              <div class="card card-body feature-bt">
+                <div class=" grap">
+                  <p><a>Blog</a></p>
+                  <p><a>Testimonials</a></p>
+                  <p><a>Contact Us</a></p>
+
+                </div>
+              </div>
+            </div>
+            </p>
+            <p><a class="nav-link active " aria-current="page" href="#" style="padding: 0.2em 0em;color:#4D4E50">PARTNER</a></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</header>
+
+<body>
+  <br> <br> <br> <br>
+  <div class="container-fluid mt-5">
+     
+      <div class="row pricing-desktop" style="padding-top: 4em;padding-bottom: 3em;">
+            <div class="col-3"></div>
+            <div class="col-3 content1-row-pricing">
+                  <h1 class="pricing-h1">Pricing</h1>
+                  <p class="pricing-p">Designed for both small and large businesses.</p>
+            </div>
+            <div class="col-4 d-flex" style="margin-left: 14em;margin-top: 1em;">
+                  <div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(241, 241, 241); border-radius: 20px; height: fit-content; width: fit-content;">
+                        <button class="sb-hight-light2" id="bt-monthly" style=" border: 0px; border-radius: 20px; padding: 3px 12px;" onclick="bt1()">Monthly</button>
+                        <button class="sb-hight-light1" id="bt-yearly" style=" border: 0px; border-radius: 20px; padding: 3px 12px;" onclick="bt2()">Yearly
+                              <svg xmlns="http://www.w3.org/2000/svg" width="13.484" height="13.464" viewBox="0 0 13.484 13.464" style="margin-left: 5px; margin-bottom: 3px;">
+                                    <path id="star" d="M13.126,4.831,8.981,4.2,7.123.24a.439.439,0,0,0-.762,0L4.5,4.2.358,4.831a.421.421,0,0,0-.238.711L3.132,8.628,2.42,12.992a.422.422,0,0,0,.62.437l3.7-2.046,3.7,2.047a.422.422,0,0,0,.62-.437l-.712-4.364,3.011-3.087a.422.422,0,0,0-.238-.711Z" transform="translate(0 -0.019)" fill="#ffc107">
+      
+                                    </path>
+                              </svg>
+                        </button>
+                  </div>
+                  <div class="icon-pricing">
+                  <img  src="./image/pricing/pricing3.png"/>
+                </div>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-12 " style=" z-index:1">
+            
+                  <button class="bt1-pricing" style="position: relative;font-size: 14px;top: 15em;left: 39em;color: white;background-color: #38CA8C;">
+                    Try for FREE
+                  </button>
+                    <button class="bt1-pricing" style="position: relative;font-size: 14px;top: 15em;left: 47em;color: #38CA8C;background-color:white ;">
+                      Try 7 days FREE
+                    </button>
+                    <button class="bt1-pricing" style="position: relative;font-size: 14px;top: 15em;left: 55em;color: white;background-color:#38CA8C ;">
+                      Try 7 days FREE
+                    </button>
+                  <div class="col-12 text-center">
+                        <img id="pricing-image" src="./image/pricing/pr1.png" />
+                  </div>
+                 
+            </div>
+           
+      </div>
+       
+  </div>
+
+  <!-- mobile  body-->
+
+
+
+
+  <footer>
+    <div class="container-fluid home-footer">
+      <div class="row row-footer-1">
+        <div class="col-3 text-end">
+          <img src="./image/avatar.png" alt="">
+          <div style="margin-right:30px;">
+            <img src="./image/face.png" alt="">
+            <img src="./image/tw.png" alt="">
+            <img src="./image/yt.png" alt="">
+            <img src="./image/int.png" alt="">
+
+          </div>
+        </div>
+        <div class="col-1 text-sm-start mt-4 mx-5">
+          <p style="width: 70%;">Resources</p>
+          <br>
+          <a>FAQs</a>
+          <br>
+
+          <a>Change Log</a>
+          <br>
+
+          <a>API docs</a>
+          <br>
+
+          <a>App integrations</a>
+        </div>
+        <div class="col-2 text-sm-start mt-4 mx-3">
+          <p>Others</p>
+          <br>
+          <a>About Us</a>
+          <br>
+          <a>Cookie Manager</a>
+          <br>
+
+          <a>Privacy Policy</a>
+          <br>
+
+          <a>Terms & Conditions</a>
+          <br>
+
+          <a>Contact Us</a>
+        </div>
+        <div class="col-2 text-sm-start mt-4 mx-3">
+          <p>Partners</p>
+          <br>
+          <a>Our Partners</a>
+          <br>
+          <a>Affiliate Program</a>
+          <br>
+
+
+        </div>
+        <div class="col-3 mt-4 mx-3">
+          <span style="font-size: 14px;">Subscribe to our newsletter and be the first to know about our updates</span>
+          <br>
+          <br>
+          <div style="height: 100%;margin-top: -9px;">
+            <input class="input-desktop-home" style="border: none;height: 29%;" placeholder="Email Address" />
+            <button>Subscribe</button>
+            <br>
+            <img style="margin-top: 20px;" src="image/image 43.png">
+          </div>
+        </div>
+
+      </div>
+      <div class="row footer-row-2 text-end mt-3">
+        <div class="col-12 mt-3 py-3  my-3 text-center">
+          Copyright © 2020. All rights reserved.
+        </div>
+      </div>
+    </div>
+
+
+    <!-- mobile footer -->
+    <div class="container-fluid d-none mobile-footer-home">
+      <div class="row">
+        <div class="col-12">
+          <img src="./image/avatar.png" alt="" class="avatar-footer">
+          <div style="margin-top:2em;">
+            <img src="./image/face.png" alt="" class="mx-2">
+            <img src="./image/tw.png" alt="" class="mx-2">
+            <img src="./image/yt.png" alt="" class="mx-2">
+            <img src="./image/int.png" alt="" class="mx-2">
+          </div>
+          <div class="col-12 mt-3 p-2">
+            <h1>Resources</h1>
+            <p>FAQS</p>
+            <p>Change Log</p>
+            <p>API docs</p>
+            <p>App integrations</p>
+          </div>
+          <div class="col-12 mt-5 p-2">
+            <h1>Others</h1>
+            <p>About Us</p>
+            <p>Cookie Manager</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            <p>Contact Us</p>
+          </div>
+          <div class="col-12 mt-5 p-2">
+            <h1>
+              Partners
+            </h1>
+            <p>Our Partners</p>
+            <p>Affiliate Program</p>
+          </div>
+          <div class="col-12 mt-5 p-2">
+            <p>Subscribe to our newsletter and be the first to know about our updates</p>
+
+            <div style="height: 100%;">
+              <input style="border: none;height: 2em;width: 60%;" placeholder="Email Address" />
+              <button style="border: none;color: red;background-color: #FFF;">Subscribe</button>
+              <br>
+              <img style="margin-top: 20px;" src="image/image 43.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const bt1 = ()=>{
+    let bt_name ="bt-monthly"
+    let bt_name2 = "bt-yearly"
+      let a = document.getElementById(bt_name);
+      let b = document.getElementById(bt_name2);
+      a.classList.replace("sb-hight-light1","sb-hight-light2");
+      b.classList.replace("sb-hight-light2", "sb-hight-light1");
+      document.getElementById("pricing-image").src = "./image/pricing/pr1.png";
+  }
+  const bt2 = ()=>{
+    let bt_name ="bt-monthly"
+    let bt_name2 = "bt-yearly"
+      let a = document.getElementById(bt_name);
+      let b = document.getElementById(bt_name2);
+      a.classList.replace("sb-hight-light2","sb-hight-light1");
+      b.classList.replace("sb-hight-light1", "sb-hight-light2");
+      document.getElementById("pricing-image").src = "./image/pricing/pr2.png";
+  }
+</script>
+ 
+
+</html>

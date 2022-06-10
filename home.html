@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="reponsive.css" />
+  <title>hieudz</title>
+</head>
+<header>
+  <div class="container-fluid shadow-lg bg-body rounded home-header" style="position: fixed;z-index: 2;">
+    <div class="row p-3 ">
+      <div class="col-3 text-end mx-4">
+
+        <img src="./image/Group1.png">
+      </div>
+      <div class="col-8 d-flex justify-content-center">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="home.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#">Link</a> -->
+            <div class="dropdown p-2">
+              <button class="border-0 bg-white text-dark" type="button">
+                FEATURE
+                <img src="/image/drop.png" style="margin-top:-5px; margin-left:5px;">
+              </button>
+              <div class=" dropdown-content grap ">
+                <a class="link-a"href="todaySeo.html">Today SEO</a>
+                <a class="link-a" href="seoBasic.html">SEO Basic</a>
+                <a class="link-a" href="seoAdv.html">SEO Advanced</a>
+                <a class="link-a" href="siteSpeed.html">Site Speed</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">PRICING</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown p-2">
+              <button class="border-0 bg-white text-dark" type="button">
+                RESOURCE
+                <img src="/image/drop.png" style="margin-top:-5px; margin-left:5px;">
+              </button>
+              <div class=" dropdown-content grap">
+                <a>Blog</a>
+                <a>Testimonials</a>
+                <a>Contact Us</a>
+
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PARTNER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <button type="button" class="try-for-free">Try For FREE</button>
+            </a>
+          
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- mobile -->
+  <div class="container-fluid shadow-lg bg-body rounded d-none header-mobile-home" style="position: fixed;z-index: 2; display: none;">
+    <div class="row mobile">
+      <div class="col-3 text-sm-start avatar-col">
+        <img src="./image/Group1.png" class="avatar-logo">
+      </div>
+      <div class="col-1"></div>
+      <div class="col-5 text-sm-start">
+
+        <button type="button" class="try-for-free">Try For FREE</button>
+
+      </div>
+      <div class="col-2 d-flex justify-content-lg-start">
+        <button class="fa-solid fa-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"></button>
+
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+          id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Colored with scrolling</h5> -->
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <a class="nav-link active " aria-current="page" href="#" style="padding: 0.5em 0em;color:#4D4E50">HOME</a>
+            <p>
+              <button class="border-0 bg-white text-dark border-0  button-home" data-bs-toggle="collapse" href="#collapseExample"
+                role="button" aria-expanded="false" aria-controls="collapseExample">
+                FEATURE
+                <img src="/image/drop.png" style="margin-top:-5px; margin-left:5px;">
+              </button>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body feature-bt">
+                  <div class=" grap">
+                    <a href="todaySeo.html">Today SEO</a>
+                    <a href="seoBasic.html">SEO Basic</a>
+                    <a href="seoAdv.html">SEO Advanced</a>
+                    <a href="siteSpeed.html">Site Speed</a>
+                  </div>
+                </div>
+              </div>
+            </p>
+
+            <p><a class="nav-link active " aria-current="page" href="#" style="padding: 0.2em 0em;color:#4D4E50">PRICING</a></p>
+            <p>
+              <button class="border-0 bg-white text-dark border-0 button-home" data-bs-toggle="collapse" href="#collapseExample1"
+                role="button" aria-expanded="false" aria-controls="collapseExample" style="margin-top: 0em;">
+                RESOURCE
+                <img src="/image/drop.png" style="margin-top:-5px; margin-left:5px;">
+              </button>
+            <div class="collapse" id="collapseExample1">
+              <div class="card card-body feature-bt">
+                <div class=" grap">
+                  <p><a>Blog</a></p>
+                  <p><a>Testimonials</a></p>
+                  <p><a>Contact Us</a></p>
+
+                </div>
+              </div>
+            </div>
+            </p>
+            <p><a class="nav-link active " aria-current="page" href="#" style="padding: 0.2em 0em;color:#4D4E50">PARTNER</a></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</header>
+
+<body>
+  <br> <br> <br> <br>
+  <div class="container-fluid home-body">
+    <div class="row p-3 row justify-content-around row-1">
+
+      <div class="col-5">
+        <div class="content1">
+          Rocket your SEO,<br>
+          pocket more sales
+        </div>
+        <div class="content1-2">
+          We are proud to make a fun and fulfilling <br>Search Engine Optimization journey for everyone on Shopify.
+        </div>
+        <button type="button" class="get-seo-booster-free">
+          <img src="/image/shuattle.png" />
+
+          Get SEO Booster Free</button>
+      </div>
+      <div class="col-7 ">
+        <img src="/image/image.png" class="image-mo" />
+
+      </div>
+    </div>
+
+    <div class="row row-2 p-3 mt-5 py-5 row justify-content-around">
+      <div class="col-5">
+        <img src="/image/SEO-pana.png" />
+      </div>
+      <div class="col-6 py-5  ">
+        <div class="content2">
+          <div class="content2-1">
+            What we can do?
+          </div>
+          <br>
+          <span>
+            <img src="/image/play.png" /> Intro & demo video
+          </span>
+          <div class="content2-2">
+            <div class="content2-2-1">On-page SEO Enhancement<br>
+              <span>
+                Bulk and individually edit unlimited SEO factors like images, meta tags,<br> URLs, ... to ensure the
+                website is well-optimized.
+              </span>
+            </div>
+            <div class="content2-2-1">Technical SEO Optimization<br>
+              <span>Create snippets and sitemap in the manner Google recommends to<br> get prioritized for crawling and
+                ranking on search pages.</span>
+            </div>
+            <div class="content2-2-1">Keyword Research<br>
+              <span>Give insights of top keywords for creating trending content and <br> matching customers’ search
+                activities.</span>
+            </div>
+            <div class="content2-2-1">PageSpeed Booster<br>
+              <span>
+                Improve page loading performance and mobile friendliness to <br>faciliate customer journey, thus
+                boosting customer retention.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row row-3 mt-5 py-5">
+      <div class="col-12 d-flex justify-content-center" style="font-weight: 600;">
+        Why SEO Booster?
+      </div>
+      <div class="col-6 my-5 ">
+        <div class="container-fluid header-3  why-seo" style="margin-left: 2em;">
+          <div class="row py-3 d-flex justify-content-center">
+            <div class="col-6 p-4  shadow-lg mx-4 grap border-radius " onclick="image1()" id="ct-image1">
+              <div class="content-row-3 ">
+                <img src="/image/configuration1.png" />
+                <p>No coding skills required</p>
+                <span>Intuitive interface with step-by-step advice and real-time personal assistance.</span>
+              </div>
+            </div>
+            <div id="ct-image2" class="col-6 p-4 mx-4 grap home-hv-why-seo" onclick="image2()">
+              <img src="/image/configuration2.png" />
+              <p>Full SEO Report</p>
+              <span>Daily report showing where SEO issues are located & giving detailed guides to fix
+                them.</span>
+            </div>
+          </div>
+          <div class="row py-3 d-flex justify-content-center grap">
+            <div class="col-6 p-4 mx-4 grap home-hv-why-seo" onclick="image3()" id="ct-image3">
+              <img src="./image/configuration3.png" />
+              <p>Saving time & effort</p>
+              <span>One-click features at your hand to solve Meta tags, ALT Tags, Images,... all in one
+                seat.</span>
+            </div>
+            <div class="col-6 p-4 mx-4 grap home-hv-why-seo" onclick="image4() " id="ct-image4">
+              <img src="./image/configuration4.png" />
+              <p>24/7 Real-time support</p>
+              <span>24/7 success customer staff and experts available to back you up with technical and any SEO
+                matters.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 mt-5">
+        <img id="image1" src="/image/Code typing-bro.png" />
+      </div>
+
+    </div>
+    <div class="row row-4">
+      <div class="col-4 ">
+        <div style="margin-left: 180px" class="back-1 mt-5">
+          <p> 28,500+ </p>
+          <span>merchants</span>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="mt-5">
+          <div class="d-flex justify-content-center ">
+            <p> 4,8 </p>
+            <p class="sao">/5</p>
+          </div>
+          <p class="w-icon"><img src="/image/sao.png"></p>
+          <span class="content-merchants"> Shopify rating</span>
+        </div>
+      </div>
+      <div class="col-4 ">
+        <div class="mt-5">
+          <p> 2,400+ </p>
+          <span>happy reviews</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-5 p-3  py-5  ">
+      <div class="col-6 py-5 d-flex justify-content-end">
+        <iframe src="https://www.youtube.com/embed?v=I3RICWXA_3U&playlist=I3RICWXA_3U&loop=1"></iframe>
+      </div>
+      <div class="col-5 py-5 text-center master-seo-desktop">
+        <p style="font-weight: 600;
+          font-size: 32px;">Master SEO Booster in <span style="color: red;"><br class="br-2-minutes d-none"> 2
+            minutes</span></p>
+        <p style="font-size:20px;font-weight: 400;color:#78C8E1;text-align:left; padding-left: 5%;
+          ">
+          <img src="/image/Group 5365.png" />
+          Install SEO Booster FOR FREE
+        </p>
+        <p style="text-align:left; padding-left:5%;">
+          <img src="/image/Group 5366.png" />
+          Quick & easy start with No code
+        </p>
+        <p style="text-align:left; padding-left: 5%;">
+          <img src="/image/Group 5367.png" />
+          Customize SEO elements as you go
+        </p>
+      </div>
+    </div>
+    <div class="row row-6 p-3 py-5 px-5">
+      <!-- <div class="col-12 text-center">
+          clients enjoy SEO Booster
+          <p style="font-size: 20px;font-weight: 400;color: #4D4E50;
+          ">Let reviews from our beloved customers speak for our services!</p>
+        </div> -->
+      <div class="col-12 text-center" style="font-weight: 600; margin-left: 25px;">
+        Our clients enjoy us
+        <p style="font-size: 20px;font-weight: 400;color: #4D4E50;text-transform: none;
+            ">See why Shopify owners all over the world trust SEO Booster App.</p>
+      </div>
+
+      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+
+        <div class="carousel-inner">
+          <div class="hieu">
+            <div class="carousel-item active">
+
+              <div class="d-flex justify-content-center mx-5">
+
+                <div class="col-3 d-flex justify-content-end">
+                  <img src="/image/image5.png" class="d-block" alt="...">
+                </div>
+                <div class="col-4 p-5 carosel-heght" style="background-color: #FFF0EC; height: 80%; ">
+                  <p>
+                    I think this APP is the most useful thing to have. First
+                    of all, not all of us are Coding expert. Secondly,
+                    Peoples here are very helpful and patient. They will
+                    help you step by step and also let you learn how to fix the problem. 2
+                    way traffic! Thumbs UP!! Flora and Hana are Super Helpful!
+                    First Class service!
+                    <br>
+                    <br>
+
+                  </p>
+
+                  <div style=" border-bottom: 1px solid #E0E0E0;">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+
+                    <img src="./image/hh.png" class="dau_phay" style="position: relative; top: 20px;left: 220px;">
+
+
+                  </div>
+                  <p style="margin-top: 10px;font-size:16px; font-weight: bold;">Harukii 晴</p>
+                  <span>Happy Customer</span>
+
+
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center mx-5">
+                <div class="col-3 d-flex justify-content-end">
+                  <img src="/image/image16.png" class="d-block " alt="...">
+                </div>
+                <div class="col-4 p-5 carosel-heght" style="background-color: #FFF0EC;">
+                  <p>
+                    I’m building my eCommerce site and I am so happy
+                    went with SEO Booster. The interface is easy to
+                    understand that I can make improvements on my own
+                    and with the help of customer support, I worked
+                    with Flora, who was so great! I’m looking forward
+                    to working with a customer service support team
+                    that has caring and extremely knowledgeable people.
+                    <br class="br-content-carosel">
+
+                  </p>
+
+                  <div style=" border-bottom: 1px solid #E0E0E0;">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="./image/hh.png" class="dau_phay" style="position: relative; top: 20px;left: 190px;">
+
+                  </div>
+                  <p style="margin-top: 10px;font-size:16px; font-weight: bold;">Fragments Maine
+                  </p>
+                  <span>Happy Customer</span>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center mx-5">
+                <div class="col-3 d-flex justify-content-end">
+                  <img src="/image/image17.png" class="d-block" alt="...">
+                </div>
+                <div class="col-4 p-5 carosel-heght" style="background-color: #FFF0EC;">
+                  <p>This app is one of the best and their customer service
+                    is off the chart who is going to give you free advice
+                    and information on how to fix your website and speed it
+                    up. You gain free insights on how to make your website
+                    better in a matter of minutes. Hands-down it’s one of
+                    the best apps on Shopify I will be purchasing unlimited
+                    shortly.<br>
+                    <br class="crs-1" >
+                    <br class="crs-1" style="display: none;">
+                  </p>
+                  <div style=" border-bottom: 1px solid #E0E0E0;">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="./image/hh.png" class="dau_phay" style="position: relative; top: 20px;left: 200px;">
+
+                  </div>
+                  <p style="margin-top: 10px;font-size:16px; font-weight: bold;">Humanhairbonys</p>
+                  <span>Happy Customer</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+           
+              <div class="d-flex justify-content-center mx-5">
+                <div class="col-3 d-flex justify-content-end">
+                  <img src="/image/image20.png" class="d-block" alt="...">
+                </div>
+                <div class="col-4 p-5 carosel-heght" style="background-color: #FFF0EC;">
+                  <p>OMGGGG THIS APP IS AMAZING. This helped all of my SEO issues and prevented me from making big
+                    errors while optimizing my page. Flora was an incredible help by providing great customer service,
+                    answering all of my questions, and being patient with me. I was skeptical, but now I know that this
+                    is the app to trust for all of my SEO
+                    issues.<br class="crs-2" style="display: none;"><br>
+                  </p>
+                  <div style=" border-bottom: 1px solid #E0E0E0;">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="./image/hh.png" class="dau_phay" style="position: relative; top: 20px;left: 200px;">
+
+                  </div>
+                  <p style="margin-top: 10px;font-size:16px; font-weight: bold;">Humanhairbonys</p>
+                  <span>Happy Customer</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              
+              <div class="d-flex justify-content-center mx-5">
+                <div class="col-3 d-flex justify-content-end">
+                  <img src="/image/image22.png" class="d-block" alt="...">
+                </div>
+                <div class="col-4 p-5 carosel-heght" style="background-color: #FFF0EC;">
+                  <p> The SEO Booster team made some really valuable improvements to both our mobile website, and
+                    desktop site that improved the speed significantly. The changes made by the SEO Booster team were
+                    delivered earlier than originally promised, and done with a
+                    minimum of fuss. Highly recommended.
+                    <br >
+                    <br >
+                    <br class="br-content-carosel-1" style="display: none;">
+                  </p>
+                  <div style=" border-bottom: 1px solid #E0E0E0;">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="./image/hh.png" class="dau_phay" style="position: relative; top: 20px;left: 200px;">
+
+                  </div>
+                  <p style="margin-top: 10px;font-size:16px; font-weight: bold;">Humanhairbonys</p>
+                  <span>Happy Customer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="prev-carousel" class="carousel-control-prev" type="button"
+          style="color: red;display: none;opacity: 1;" data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide="prev" onclick="prevHover()">
+          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+          <img src="./image/back.png" class="prev-button" style="position: relative;  top: 19px; ">
+        </button>
+
+        <button id="next-carousel" class="carousel-control-next " type="button" style="color: red;opacity: 1;display: block;"
+          data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next" onclick="nextHover()">
+          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+          <img src="./image/next.png" class="next-button" style="position: relative;    top: 19px; ">
+
+        </button>
+      </div>
+    </div>
+
+    <div class="row row-8 p-3 ">
+      <div class="col-12 y-5  d-flex justify-content-center iframe">
+        <iframe src="https://www.youtube.com/embed?v=uSAPeXER13g&playlist=uSAPeXER13g&loop=1"></iframe>
+      </div>
+
+      <div class="col-12 d-flex justify-content-center mt-5 my-4">
+        <button>Start your SEO journey</button>
+      </div>
+    </div>
+    <div class="row row-7 p-3 py-5 px-5">
+      <div class="col-12 text-center" style="font-weight: 600;">
+        SEO Articles
+        <p style="font-size: 20px;font-weight: 400;color: #4D4E50;
+          ">Update new SEO marketing guide and tips from our experts.</p>
+      </div>
+      <div class="col-12">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col p-5 ">
+            <div class="card h-100 bg-white p-2">
+              <img src="/image/mmmm.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">8 EASY steps of SHOPIFY SEO optimization to TOP 1</h5>
+                <p class="br-footer-cart1"></p>
+                <div class="footer-cart d-flex justify-content-between">
+                  <div class="d-flex footer-cart-time" style="width: 56%;">
+
+                    <p class="content1-cart">GUIDES</p>
+                    <p class="content2-cart mx-3">Apr 8, 2022</p>
+                  </div>
+                  <div>
+                    <p class="content3-cart">
+                      <img src="/image/card.png">
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col p-5 ">
+            <div class="card h-100 bg-white p-2">
+              <img src="/image/anh2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <a>
+                  <h5 class="card-title">6 Digital CX Strategies eCommerce Owners Should Know
+                  </h5>
+                </a>
+                <div class="footer-cart d-flex justify-content-between">
+                  <div class="d-flex footer-cart-time" style="width: 56%;">
+
+                    <p class="content1-cart">GUIDES</p>
+                    <p class="content2-cart mx-3">Apr 8, 2022</p>
+                  </div>
+                  <div>
+                    <p class="content3-cart">
+                      <img src="/image/card.png">
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col p-5 ">
+            <div class="card h-100 bg-white p-2">
+              <img src="/image/anh3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Best Content Writing Tips For SEO Experts <span
+                    class="br-footer-cart">ddnnnnnnnnnnnnnnnnnnnn</span></h5>
+                <!-- <p class="br-footer-cart"><p> -->
+                <div class="footer-cart d-flex justify-content-between">
+                  <div class="d-flex footer-cart-time" style="width: 56%;">
+                    <p class="content1-cart">GUIDES</p>
+                    <p class="content2-cart mx-3">Apr 8, 2022</p>
+                  </div>
+                  <div>
+                    <p class="content3-cart">
+                      <img src="/image/card.png">
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-2 d-flex justify-content-center">
+          <button class="see-more-button">See More</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- mobile  body-->
+
+  <div class="container d-none body-mobile-home">
+    <div class="row">
+      <div class="col-12 text-center">
+        <img src="/image/image.png" class="image-mobile">
+      </div>
+      <div class="col-12 text-center">
+        <h1 class="row-1-content">Rocket your SEO,<br>
+          pocket more sales</h1>
+        <span>We are proud to make a fun and fulfilling
+          Search Engine Optimization journey for everyone on Shopify.</span>
+      </div>
+      <div class="col-12 d-flex justify-content-center my-4">
+        <button type="button" class="get-seo-booster-free mt-0">
+          <img src="/image/shuattle.png" />
+
+          Get SEO Booster Free</button>
+      </div>
+
+    </div>
+    <div class="row row-mobile-2">
+      <div class="col-12 text-center">
+        <img src="/image/SEO-pana.png" style="width: 80%;" />
+      </div>
+      <div class="col-12 text-center mt-3">
+        <h1 style="color: #FC6232;"> What we can do?</h1>
+        <div class="text-start mx-5">
+          <span class="my-4">
+            <img src="/image/play.png" /> Intro & demo video
+          </span>
+          <h2>On-page SEO Enhancement</h2>
+          <span>Bulk & individually edit key SEO factors like images,
+            meta tags, URLs, ... to ensure
+            the website is comprehensively well-optimized.
+          </span>
+          <h2>Technical SEO Optimization </h2>
+          <span>Create snippets and sitemap in the manner Google recommends
+            to get prioritized for crawling and ranking on search pages.
+          </span>
+          <h2>Keyword Research
+
+          </h2>
+          <span>Give insights of top keywords for creating
+            trending content and matching customers’ search activities.
+          </span>
+          <h2>PageSpeed Booster
+
+          </h2>
+          <span>Improve page loading performance and mobile friendliness to
+            faciliate customer journey, which also benefits customer retention.
+          </span>
+        </div>
+      </div>
+
+    </div>
+    <div class="row row-mobile-3 mt-4">
+      <div class="col-12 text-center my-3">
+        <h1>Why SEO Booster?</h1>
+
+      </div>
+      <div class="col-12 text-center my-3">
+        <div class=" p-4  shadow-lg mx-4 grap border-radius "  id="ct-image1">
+          <!-- <button > -->
+          <div class="content-row-3 " data-bs-toggle="collapse" data-bs-target="#collapseExample">
+            <img src="/image/configuration1.png" />
+            <p>No coding skills required</p>
+            <div class="text-start">
+              <span>Intuitive interface with step-by-step
+                advice and real-time personal assistance.
+              </span>
+            </div>
+
+          </div>
+          <!-- </button> -->
+        </div>
+
+        <div class="col-12 text-center">
+          <div class="collapse" id="collapseExample">
+            <div class="card-row-3-1 card-body">
+              <img src="/image/Code typing-bro.png" style="width: 90%;" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 text-center my-3">
+
+        <div id="ct-image2" class="p-4 mx-4 grap shadow-lg border-radius" >
+          <div class="content-row-3 " data-bs-toggle="collapse" data-bs-target="#collapseExample1">
+            <img src="/image/configuration2.png" />
+            <p>Full SEO Report</p>
+            <div class="text-start">
+              <span>Daily report showing where SEO
+                issues are located & giving detailed
+                guides to fix
+                them.</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <div class="collapse" id="collapseExample1">
+            <div class="card-row-3-1 card-body">
+              <img src="/image/image15.png" style="width: 90%;" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center my-3">
+        <div class=" p-4 mx-4 grap shadow-lg border-radius" onclick="image3()" id="ct-image3">
+
+          <div class="content-row-3 " data-bs-toggle="collapse" data-bs-target="#collapseExample2">
+            <img src="./image/configuration3.png" />
+            <p>Saving time & effort</p>
+            <div class="text-start">
+              <span>One-click features at your hand to
+                solve Meta tags, ALT Tags, Images,... all in one
+                seat.</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <div class="collapse" id="collapseExample2">
+            <div class="card-row-3-1 card-body">
+              <img src="/image/image3.png" style="width: 90%;" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center my-3">
+        <div class=" p-4 mx-4 grap shadow-lg border-radius" onclick="image4() " id="ct-image4">
+          <div class="content-row-3 " data-bs-toggle="collapse" data-bs-target="#collapseExample3">
+            <img src="./image/configuration4.png" />
+            <p>24/7 Real-time support</p>
+            <div class="text-start">
+              <span>24/7 success customer staff and experts available to back you up
+                with technical and any SEO
+                matters.</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <div class="collapse" id="collapseExample3">
+            <div class="card-row-3-1 card-body">
+              <img src="/image/image4.png" style="width: 90%;" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+
+      </div>
+    </div>
+    <div class="row row-mobile-4 mt-4">
+      <div class="col-12 text-center">
+        <div class="back-1">
+          <p> 28,500+ </p>
+          <p style="font-size: 20px;">merchants</p>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="d-flex justify-content-center">
+          <p style="color:#FF6E41 ;font-size:3em"> 4,8 </p>
+          <p class="w-icon-moblie text-center"><img src="/image/sao.png"></p>
+
+          <p class="sao-moblie">/5</p>
+
+        </div>
+        <p class="text-center" style="font-size: 20px;margin-top: -1em;"> Shopify rating</p>
+
+
+      </div>
+      <div class="col-12 text-center">
+        <div class="back-1">
+          <p> 2,400+ </p>
+          <p style="font-size: 20px;margin-top: -1em;">happy reviews</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-mobile-5 mt-4">
+      <div class="col-12 text-center">
+        <iframe src="https://www.youtube.com/embed?v=I3RICWXA_3U&playlist=I3RICWXA_3U&loop=1"></iframe>
+      </div>
+      <div class="col-12 text-center">
+        <h1>Master SEO Booster in <span style="color: red;"><br class="br-2-minutes d-none"> 2
+            minutes</span></h1>
+        <div class="my-3" style="margin-left: 2em;">
+          <p class="text-start" style="font-size:1em;font-weight: 400;color:#78C8E1">
+            <img src="/image/Group 5365.png" style="width: 10%;" />
+            Install SEO Booster FOR FREE
+          </p>
+          <p class="text-start" style="font-size:1em;font-weight: 400;color:#78C8E1">
+            <img src="/image/Group 5366.png" style="width: 10%;" />
+            Quick & easy start with No code
+          </p>
+          <p class="text-start" style="font-size:1em;font-weight: 400;color:#78C8E1">
+            <img src="/image/Group 5367.png" style="width: 10%;" />
+            Customize SEO elements as you go
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-mobile-6 mt-4">
+      <div class="col-12 text-center" style="font-weight: 600;">
+        <h1>Our clients enjoy us</h1>
+        <p class="text-start mx-5" style="font-size: 1em;font-weight: 400;color: #4D4E50;text-transform: none;
+            ">See why Shopify owners all over the world trust SEO Booster App.</p>
+      </div>
+
+        <div id="carouselExampleControlsNoTouching1" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+             
+                <div class="col-12 text-center">
+                  <img src="/image/image5.png" style="width: 80%;">
+                </div>
+                <div style="padding: 0px 10%">
+                  <div class=" col-12 text-center " style="background-color: #FFF0EC;  ">
+                    <div class="config-height">
+                      <p class="text-start " style="padding: 1em;">
+                        I think this APP is the most useful thing to have. First
+                        of all, not all of us are Coding expert. Secondly,
+                        Peoples here are very helpful and patient. They will
+                        help you step by step and also let you learn how to fix the problem. 2
+                        way traffic! Thumbs UP!! Flora and Hana are Super Helpful!
+                        First Class service!
+                        
+                       
+                      </p>
+    
+                    </div>
+                   
+                    <div style=" border-bottom: 1px solid #E0E0E0; padding: 1em; margin-top: -2em;" class="text-start">
+                      <img src="/image/sao.png">
+                      <img src="/image/sao.png">
+                      <img src="/image/sao.png">
+                      <img src="/image/sao.png">
+                      <img src="/image/sao.png">
+  
+                      <img src="./image/hh.png" class="dau_phay" style="position: relative;width: 15%; top:2em">
+  
+  
+                    </div>
+                    <div class="text-start p-4" style="margin-top: -1em;">
+
+                    <p style="font-size:16px; font-weight: bold;">Harukii 晴</p>
+                    <p style="margin-top: -1em;">Happy Customer</p>
+                  </div>
+  
+  
+                  </div>
+                </div>
+            
+            </div>
+            <div class="carousel-item">
+              <div class="col-12 text-center">
+                <img src="/image/image16.png" style="width: 80%;">
+              </div>
+              <div style="padding: 0px 10%">
+                <div class=" col-12 text-center " style="background-color: #FFF0EC;  ">
+                  <div class="config-height">
+                    <p class="text-start " style="padding: 1em;">
+                      I’m building my eCommerce site and I am so happy
+                    went with SEO Booster. The interface is easy to
+                    understand that I can make improvements on my own
+                    and with the help of customer support, I worked
+                    with Flora, who was so great! I’m looking forward
+                    to working with a customer service support team
+                    that has caring and extremely knowledgeable people.
+                    </p>
+  
+                  </div>
+                 
+                  <div style=" border-bottom: 1px solid #E0E0E0; padding: 1em; margin-top: -2em;" class="text-start">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+
+                    <img src="./image/hh.png" class="dau_phay" style="position: relative;width: 15%; top:2em">
+
+
+                  </div>
+                  <div class="text-start p-4" style="margin-top: -1em;">
+
+                  <p style="font-size:16px; font-weight: bold;">Fragments Maine</p>
+                  <p style="margin-top: -1em;">Happy Customer</p>
+                </div>
+
+
+                </div>
+              </div>
+            </div>
+            
+            <div class="carousel-item">
+              <div class="col-12 text-center">
+                <img src="/image/image17.png" style="width: 80%;">
+              </div>
+              <div style="padding: 0px 10%">
+                <div class=" col-12 text-center " style="background-color: #FFF0EC;  ">
+                  <div class="config-height">
+                    <p class="text-start " style="padding: 1em;">
+                      This app is one of the best and their customer service
+                      is off the chart who is going to give you free advice
+                      and information on how to fix your website and speed it
+                      up. You gain free insights on how to make your website
+                      better in a matter of minutes. Hands-down it’s one of
+                      the best apps on Shopify I will be purchasing unlimited
+                      shortly.
+                    
+                    </p>
+  
+                  </div>
+                 
+                  <div style=" border-bottom: 1px solid #E0E0E0; padding: 1em; margin-top: -2em;" class="text-start">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+
+                    <img src="./image/hh.png" class="dau_phay" style="position: relative;width: 15%; top:2em">
+
+
+                  </div>
+                  <div class="text-start p-4" style="margin-top: -1em;">
+
+                  <p style="font-size:16px; font-weight: bold;">Humanhairbonys</p>
+                  <p style="margin-top: -1em;">Happy Customer</p>
+                </div>
+
+
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="carousel-item">
+              <div class="col-12 text-center">
+                <img src="/image/image20.png" style="width: 80%;">
+              </div>
+              <div style="padding: 0px 10%">
+                <div class=" col-12 text-center " style="background-color: #FFF0EC;  ">
+                  <div class="config-height">
+                    <p class="text-start " style="padding: 1em;">
+                      OMGGGG THIS APP IS AMAZING. This helped all of my SEO issues and prevented me from making big
+                      errors while optimizing my page. Flora was an incredible help by providing great customer service,
+                      answering all of my questions, and being patient with me. I was skeptical, but now I know that this
+                      is the app to trust for all of my SEO
+                      issues.
+                    
+                    </p>
+  
+                  </div>
+                 
+                  <div style=" border-bottom: 1px solid #E0E0E0; padding: 1em; margin-top: -2em;" class="text-start">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+
+                    <img src="./image/hh.png" class="dau_phay" style="position: relative;width: 15%; top:2em">
+
+
+                  </div>
+                  <div class="text-start p-4" style="margin-top: -1em;">
+
+                  <p style="font-size:16px; font-weight: bold;">Humanhairbonys</p>
+                  <p style="margin-top: -1em;">Happy Customer</p>
+                </div>
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="col-12 text-center">
+                <img src="/image/image22.png" style="width: 80%;">
+              </div>
+              <div style="padding: 0px 10%">
+                <div class=" col-12 text-center " style="background-color: #FFF0EC;  ">
+                  <div class="config-height">
+                    <p class="text-start " style="padding: 1em;">
+                    
+                      The SEO Booster team made some really valuable improvements to both our mobile website, and
+                      desktop site that improved the speed significantly. The changes made by the SEO Booster team were
+                      delivered earlier than originally promised, and done with a
+                      minimum of fuss. Highly recommended.
+                    
+                    </p>
+  
+                  </div>
+                 
+                  <div style=" border-bottom: 1px solid #E0E0E0; padding: 1em; margin-top: -2em;" class="text-start">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+                    <img src="/image/sao.png">
+
+                    <img src="./image/hh.png" class="dau_phay" style="position: relative;width: 15%; top:2em">
+
+
+                  </div>
+                  <div class="text-start p-4" style="margin-top: -1em;">
+
+                  <p style="font-size:16px; font-weight: bold;">Humanhairbonys</p>
+                  <p style="margin-top: -1em;">Happy Customer</p>
+                </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <button id="prev-carousel-mobile" class="carousel-control-prev" type="button"
+          style="color: red;display: none;opacity: 1;" data-bs-target="#carouselExampleControlsNoTouching1"
+          data-bs-slide="prev" onclick="prevHoverMobile()">
+          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+          <img src="./image/back.png" class="prev-button" style="position: relative;  ">
+        </button>
+
+        <button id="next-carousel-mobile" class="carousel-control-next " type="button" style="color: red;opacity: 1;display: block;"
+          data-bs-target="#carouselExampleControlsNoTouching1" data-bs-slide="next" onclick="nextHoverMobile()">
+          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+          <img src="./image/next.png" class="next-button" style="position: relative;">
+
+        </button>
+
+        </div>
+
+    
+    </div>
+    <div class="row row-mobile-7 mt-3 ">
+      <div class="col-12  d-flex justify-content-center">
+        <iframe src="https://www.youtube.com/embed?v=uSAPeXER13g&playlist=uSAPeXER13g&loop=1"></iframe>
+      </div>
+
+      <div class="col-12 d-flex justify-content-center mt-4">
+        <button class="row-mobile-7-button">Start your SEO journey</button>
+      </div>
+    </div>
+
+    <div class="row row-mobile-8 mt-4">
+      <div class="col-12 text-center" style="font-weight: 600;">
+        <h1 style="color:#FC6232 ;">SEO Articles</h1>
+        <p style="font-size: 18px;font-weight: 400;color: #4D4E50;
+          ">Update new SEO marketing guide and<br> tips from our experts.</p>
+      </div>
+      
+        <div class=" p-5 ">
+          <div class="card h-100 bg-white p-2">
+            <img src="/image/mmmm.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">8 EASY steps of SHOPIFY SEO optimization to TOP 1</h5>
+              <p class="br-footer-cart1"></p>
+              <div class="footer-cart d-flex justify-content-between">
+                <div class="d-flex footer-cart-time" style="width: 56%;">
+
+                  <p class="content1-cart">GUIDES</p>
+                  <p class="content2-cart mx-3">Apr 8, 2022</p>
+                </div>
+                <div>
+                  <p class="content3-cart">
+                    <img src="/image/card.png">
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+   
+      <div class="col p-5 ">
+        <div class="card h-100 bg-white p-2">
+          <img src="/image/anh2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a>
+              <h5 class="card-title">6 Digital CX Strategies eCommerce Owners Should Know
+              </h5>
+            </a>
+            <div class="footer-cart d-flex justify-content-between">
+              <div class="d-flex footer-cart-time" style="width: 56%;">
+
+                <p class="content1-cart">GUIDES</p>
+                <p class="content2-cart mx-3">Apr 8, 2022</p>
+              </div>
+              <div>
+                <p class="content3-cart">
+                  <img src="/image/card.png">
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col p-5 ">
+        <div class="card h-100 bg-white p-2">
+          <img src="/image/anh3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">The Best Content Writing Tips For SEO Experts <span
+                class="br-footer-cart">ddnnnnnnnnnnnnnnnnnnnn</span></h5>
+            <!-- <p class="br-footer-cart"><p> -->
+            <div class="footer-cart d-flex justify-content-between">
+              <div class="d-flex footer-cart-time" style="width: 56%;">
+                <p class="content1-cart">GUIDES</p>
+                <p class="content2-cart mx-3">Apr 8, 2022</p>
+              </div>
+              <div>
+                <p class="content3-cart">
+                  <img src="/image/card.png">
+                </p>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+      <div class="col-12 d-flex justify-content-center">
+        <button class="see-more-button" style="width: 34%;">See More</button>
+      </div>
+    </div>
+   
+   
+  </div>
+<!-- TESTIMONIALS -->
+
+    <!-- END OF TESTIMONIALS -->
+
+  <footer>
+    <div class="container-fluid home-footer">
+      <div class="row row-footer-1">
+        <div class="col-3 text-end">
+          <img src="./image/avatar.png" alt="">
+          <div style="margin-right:30px;">
+            <img src="./image/face.png" alt="">
+            <img src="./image/tw.png" alt="">
+            <img src="./image/yt.png" alt="">
+            <img src="./image/int.png" alt="">
+
+          </div>
+        </div>
+        <div class="col-1 text-sm-start mt-4 mx-5">
+          <p style="width: 70%;">Resources</p>
+          <br>
+          <a>FAQs</a>
+          <br>
+
+          <a>Change Log</a>
+          <br>
+
+          <a>API docs</a>
+          <br>
+
+          <a>App integrations</a>
+        </div>
+        <div class="col-2 text-sm-start mt-4 mx-3">
+          <p>Others</p>
+          <br>
+          <a>About Us</a>
+          <br>
+          <a>Cookie Manager</a>
+          <br>
+
+          <a>Privacy Policy</a>
+          <br>
+
+          <a>Terms & Conditions</a>
+          <br>
+
+          <a>Contact Us</a>
+        </div>
+        <div class="col-2 text-sm-start mt-4 mx-3">
+          <p>Partners</p>
+          <br>
+          <a>Our Partners</a>
+          <br>
+          <a>Affiliate Program</a>
+          <br>
+
+
+        </div>
+        <div class="col-3 mt-4 mx-3">
+          <span style="font-size: 14px;">Subscribe to our newsletter and be the first to know about our updates</span>
+          <br>
+          <br>
+          <div style="height: 100%;margin-top: -9px;">
+            <input class="input-desktop-home" style="border: none;height: 29%;" placeholder="Email Address" />
+            <button>Subscribe</button>
+            <br>
+            <img style="margin-top: 20px;" src="image/image 43.png">
+          </div>
+        </div>
+
+      </div>
+      <div class="row footer-row-2 text-end mt-3">
+        <div class="col-12 mt-3 py-3  my-3 text-center">
+          Copyright © 2020. All rights reserved.
+        </div>
+      </div>
+    </div>
+
+
+    <!-- mobile footer -->
+    <div class="container-fluid d-none mobile-footer-home">
+      <div class="row">
+        <div class="col-12">
+          <img src="./image/avatar.png" alt="" class="avatar-footer">
+          <div style="margin-top:2em;">
+            <img src="./image/face.png" alt="" class="mx-2">
+            <img src="./image/tw.png" alt="" class="mx-2">
+            <img src="./image/yt.png" alt="" class="mx-2">
+            <img src="./image/int.png" alt="" class="mx-2">
+          </div>
+          <div class="col-12 mt-3 p-2">
+            <h1>Resources</h1>
+            <p>FAQS</p>
+            <p>Change Log</p>
+            <p>API docs</p>
+            <p>App integrations</p>
+          </div>
+          <div class="col-12 mt-5 p-2">
+            <h1>Others</h1>
+            <p>About Us</p>
+            <p>Cookie Manager</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            <p>Contact Us</p>
+          </div>
+          <div class="col-12 mt-5 p-2">
+            <h1>
+              Partners
+            </h1>
+            <p>Our Partners</p>
+            <p>Affiliate Program</p>
+          </div>
+          <div class="col-12 mt-5 p-2">
+            <p>Subscribe to our newsletter and be the first to know about our updates</p>
+
+            <div style="height: 100%;">
+              <input style="border: none;height: 2em;width: 60%;" placeholder="Email Address" />
+              <button style="border: none;color: red;background-color: #FFF;">Subscribe</button>
+              <br>
+              <img style="margin-top: 20px;" src="image/image 43.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var flag = 1;
+    const image2 = () => {
+      console.log("hieudz");
+      document.getElementById("image1").src = "/image/image15.png"
+      document.getElementById("image1").style.marginTop = "90px";
+      document.getElementById("image1").style.marginLeft = "50px";
+      // them hover vs shadow
+      document.getElementById("ct-image2").classList.remove('home-hv-why-seo');
+      document.getElementById("ct-image2").classList.add('shadow-lg', 'border-radius')
+      // xoa shadow di
+      const idHover = `ct-image${flag}`;
+      document.getElementById(idHover).classList.remove('shadow-lg', 'border-radius')
+      document.getElementById(idHover).classList.add('home-hv-why-seo')
+     
+      flag = 2;
+    }
+    const image1 = () => {
+      document.getElementById("image1").src = "/image/Code typing-bro.png";
+      document.getElementById("image1").style.marginTop = "0px";
+      //them shadoow vs hover
+      document.getElementById("ct-image1").classList.add('shadow-lg', 'border-radius');
+      document.getElementById("ct-image1").classList.remove('home-hv-why-seo');
+      // xoa shadow cua 3 anh di
+      const idHover = `ct-image${flag}`;
+      document.getElementById(idHover).classList.remove('shadow-lg', 'border-radius')
+      document.getElementById(idHover).classList.add('home-hv-why-seo')
+      flag = 1;
+    }
+    const image3 = () => {
+      document.getElementById("image1").src = "/image/image3.png";
+      document.getElementById("image1").style.marginTop = "0px";
+      // them shadow vs hover
+      document.getElementById("ct-image3").classList.add('shadow-lg', 'border-radius')
+      document.getElementById("ct-image3").classList.remove('home-hv-why-seo');
+      // xoa shadow cua 3 cai
+      const idHover = `ct-image${flag}`;
+      document.getElementById(idHover).classList.remove('shadow-lg', 'border-radius')
+      document.getElementById(idHover).classList.add('home-hv-why-seo')
+      flag = 3;
+    }
+    const image4 = () => {
+      document.getElementById("image1").src = "/image/image4.png";
+      document.getElementById("image1").style.marginTop = "0px";
+      // them shadow vs hover 
+      document.getElementById("ct-image4").classList.add('shadow-lg', 'border-radius');
+      document.getElementById("ct-image4").classList.remove('home-hv-why-seo');
+      // xoa shadow cua 3 anh
+      const idHover = `ct-image${flag}`;
+      document.getElementById(idHover).classList.remove('shadow-lg', 'border-radius')
+      document.getElementById(idHover).classList.add('home-hv-why-seo')
+      flag = 4;
+    }
+
+    var count = 0;
+    var countMobile = 0;
+    var nextHover = () => {
+
+      count += 1;
+      document.getElementById("prev-carousel").style.display = "block";
+      if (count == 4) {
+        console.log("ko vao day a");
+        document.getElementById("next-carousel").style.display = "none";
+      }
+      else {
+        document.getElementById("next-carousel").style.display = "block";
+      }
+      console.log("next: ", count);
+    }
+    var nextHoverMobile = () => {
+        
+      countMobile += 1;
+      document.getElementById("prev-carousel-mobile").style.display = "block";
+      if (countMobile == 4) {
+        console.log("ko vao day a");
+        document.getElementById("next-carousel-mobile").style.display = "none";
+      }
+      else {
+        document.getElementById("next-carousel-mobile").style.display = "block";
+      }
+      console.log("next: ", countMobile);
+    }
+    var prevHoverMobile = () => {
+      countMobile -= 1;
+      document.getElementById("next-carousel-mobile").style.display = "block";
+      if (countMobile == 0) {
+        document.getElementById("prev-carousel-mobile").style.display = "none";
+      }
+      else {
+        document.getElementById("prev-carousel-mobile").style.display = "block";
+      }
+      console.log("prev: ", countMobile);
+
+    }
+    var prevHover = () => {
+      count -= 1;
+      document.getElementById("next-carousel").style.display = "block";
+      if (count == 0) {
+        document.getElementById("prev-carousel").style.display = "none";
+      }
+      else {
+        document.getElementById("prev-carousel").style.display = "block";
+      }
+      console.log("prev: ", count);
+
+    }
+    
+  
+  
+  </script>
+
+</html>
